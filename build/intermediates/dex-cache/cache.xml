@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/root/.gradle/caches/modules-2/files-2.1/edu.gmu.cs/ecj/22/c35f7ea978b658acae5c8427f7a090c1f913874e/ecj-22.jar"
+        jar="/home/victorjatoba/Android/smartstudyplan/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="c35f7ea978b658acae5c8427f7a090c1f913874e">
-        <dex dex="/home/victorjatoba/Android/smart-study-plan/app/build/intermediates/pre-dexed/debug/ecj-22-a945c7d1e53c8ec56394336fbd024a1dbc18f6d6.jar" />
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/home/victorjatoba/Android/smartstudyplan/app/build/intermediates/pre-dexed/debug/classes-95e3586593e9b4edfe29a60c25ef71187d26bf5f.jar" />
     </item>
     <item
         jar="/home/victorjatoba/Android/smart-study-plan/aspga/build/libs/aspga.jar"
@@ -16,18 +16,46 @@
         <dex dex="/home/victorjatoba/Android/smart-study-plan/app/build/intermediates/pre-dexed/debug/aspga-81d35037a00a0b948ec8bb1c619a18041f391b94.jar" />
     </item>
     <item
-        jar="/root/.gradle/caches/modules-2/files-2.1/org.androidannotations/androidannotations-api/3.1/ac33174269a767fcbf3a944cdb3d52e07ef93bee/androidannotations-api-3.1.jar"
+        jar="/home/victorjatoba/Android/smartstudyplan/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="ac33174269a767fcbf3a944cdb3d52e07ef93bee">
-        <dex dex="/home/victorjatoba/Android/smart-study-plan/app/build/intermediates/pre-dexed/debug/androidannotations-api-3.1-1b97d4caf4f639f8fdd6190888d65be429cd00c7.jar" />
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/home/victorjatoba/Android/smartstudyplan/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-a45e9910052abcfc4f85da68ab80e8ded7a3dbf0.jar" />
     </item>
     <item
-        jar="/root/Android/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jar="/home/victorjatoba/Android/smartstudyplan/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/home/victorjatoba/Android/smartstudyplan/app/build/intermediates/pre-dexed/debug/classes-20cf82088c6938f303eb1b8e06e980697b7ba502.jar" />
+    </item>
+    <item
+        jar="/home/victorjatoba/Android/smartstudyplan/aspga/build/libs/aspga.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c749f040d18fabf628e014b297a4c1b5592dafd5">
+        <dex dex="/home/victorjatoba/Android/smartstudyplan/app/build/intermediates/pre-dexed/debug/aspga-bfefa1789e83498352aaadb2c9b448d071f36cd8.jar" />
+    </item>
+    <item
+        jar="/home/victorjatoba/Android/smart-study-plan/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/home/victorjatoba/Android/smart-study-plan/app/build/intermediates/pre-dexed/debug/classes-4b04b1b702a5dfd72e97d48b2e410b23df7db3eb.jar" />
+    </item>
+    <item
+        jar="/home/victorjatoba/Android/smartstudyplan/app/build/intermediates/exploded-aar/com.github.bluejamesbond/textjustify-android/2.1.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9e3ac75a5e3f8ef059c7766dc9640e0487e32749">
+        <dex dex="/home/victorjatoba/Android/smartstudyplan/app/build/intermediates/pre-dexed/debug/classes-ba65a2aeebabcae7cfd0e5a7bb2e99e065b02784.jar" />
+    </item>
+    <item
+        jar="/home/victorjatoba/Android/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/home/victorjatoba/Android/smart-study-plan/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-476e15c6bd6fff974b95eef11d4ea6b2ef8bdf9e.jar" />
+        <dex dex="/home/victorjatoba/Android/smartstudyplan/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-115e52c31f5ce05015101d4bb7cac58f7f2850a9.jar" />
     </item>
     <item
         jar="/home/victorjatoba/Android/smart-study-plan/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
@@ -37,11 +65,18 @@
         <dex dex="/home/victorjatoba/Android/smart-study-plan/app/build/intermediates/pre-dexed/debug/classes-8e7df5c7978220ed05c221f352af5214473052c9.jar" />
     </item>
     <item
-        jar="/home/victorjatoba/Android/smart-study-plan/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jar="/home/victorjatoba/.gradle/caches/modules-2/files-2.1/org.androidannotations/androidannotations-api/3.1/ac33174269a767fcbf3a944cdb3d52e07ef93bee/androidannotations-api-3.1.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="/home/victorjatoba/Android/smart-study-plan/app/build/intermediates/pre-dexed/debug/classes-4b04b1b702a5dfd72e97d48b2e410b23df7db3eb.jar" />
+        sha1="ac33174269a767fcbf3a944cdb3d52e07ef93bee">
+        <dex dex="/home/victorjatoba/Android/smartstudyplan/app/build/intermediates/pre-dexed/debug/androidannotations-api-3.1-9103d42204dd0d454185877346e8cddebdb9e6d4.jar" />
+    </item>
+    <item
+        jar="/home/victorjatoba/.gradle/caches/modules-2/files-2.1/edu.gmu.cs/ecj/22/c35f7ea978b658acae5c8427f7a090c1f913874e/ecj-22.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c35f7ea978b658acae5c8427f7a090c1f913874e">
+        <dex dex="/home/victorjatoba/Android/smartstudyplan/app/build/intermediates/pre-dexed/debug/ecj-22-eed237ded14f9f1f2a950fbfd1a3da0c9fe48ef0.jar" />
     </item>
     <item
         jar="/home/victorjatoba/Android/smart-study-plan/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
