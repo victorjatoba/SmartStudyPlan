@@ -1,2 +1,2 @@
 # smartstudyplan
-App to organize and maneger studies.
+App to organize and manage studies.
