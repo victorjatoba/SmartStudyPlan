@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#CC000000"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/help_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="22sp"
+        android:textColor="@android:color/secondary_text_dark" />
+
+    <com.bluejamesbond.text.DocumentView
+        android:id="@+id/help_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:documentView_textSize="18sp"
+        app:documentView_textAlignment="justified"
+        app:documentView_textColor="@android:color/secondary_text_dark"
+        app:documentView_insetPadding="24dp"
+        app:documentView_textTypefacePath="fonts/Roboto-Regular.ttf"/>
+
+</LinearLayout>

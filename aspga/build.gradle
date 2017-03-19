@@ -1,0 +1,21 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'edu.gmu.cs:ecj:22'
+    }
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+apply plugin: 'java'
+
+dependencies {
+    compile 'edu.gmu.cs:ecj:22'
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:paddingLeft="8dp"
+    android:paddingRight="19dp" >
+
+    <ImageView
+        android:id="@+id/subject_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="4dp"
+        android:layout_marginLeft="4dp"/>
+
+
+    <ImageView
+        android:id="@+id/difficult_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="22dp"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:id="@+id/weight_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/difficult_icon" />
+
+    <TextView
+        android:id="@+id/subject_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:layout_toLeftOf="@id/difficult_icon"
+        android:layout_toRightOf="@id/subject_icon"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

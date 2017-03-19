@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_team_text_paulo_name"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/content1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="email"
+                android:text="@string/settings_team_text_paulo_text"
+                android:textColor="@color/gray_dark"
+                android:paddingLeft="16dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_team_text_jatoba_name"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/content2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="email"
+                android:text="@string/settings_team_text_jatoba_text"
+                android:textColor="@color/gray_dark"
+                android:paddingLeft="16dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/title3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_team_text_flavio_name"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/content3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="email"
+                android:text="@string/settings_team_text_flavio_text"
+                android:textColor="@color/gray_dark"
+                android:paddingLeft="16dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/title4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_team_text_soares_name"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/content4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="email"
+                android:text="@string/settings_team_text_soares_text"
+                android:textColor="@color/gray_dark"
+                android:paddingLeft="16dp"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

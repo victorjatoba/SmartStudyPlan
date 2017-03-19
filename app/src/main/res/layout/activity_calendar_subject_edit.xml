@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="23">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Segunda -->
+            <LinearLayout
+                android:id="@+id/monday"
+                style="@style/plan_day_container"
+                android:background="@android:color/white">
+                <TextView
+                    style="@style/plan_day_weekday"
+                    android:text="@string/monday_short"/>
+
+                <LinearLayout style="@style/plan_day_subject_container">
+                    <!-- Manhã -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/plan_day_period"
+                            android:src="@drawable/meiosol"/>
+
+                        <LinearLayout
+                            android:id="@+id/monday_morning"
+                            style="@style/plan_day_period_container"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent"/>
+
+                    <!-- Tarde -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/plan_day_period"
+                            android:src="@drawable/sol"/>
+
+                        <LinearLayout
+                            android:id="@+id/monday_afternoon"
+                            style="@style/plan_day_period_container"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent"/>
+
+                    <!-- Noite -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/plan_day_period"
+                            android:src="@drawable/lua"/>
+
+                        <LinearLayout
+                            android:id="@+id/monday_night"
+                            style="@style/plan_day_period_container"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Segunda -->
+            <!-- Terça -->
+            <LinearLayout
+                android:id="@+id/tuesday"
+                style="@style/plan_day_container"
+                android:background="@color/gray_light_list">
+                <TextView
+                    style="@style/plan_day_weekday"
+                    android:text="@string/tuesday_short"/>
+
+                <LinearLayout style="@style/plan_day_subject_container">
+                    <!-- Manhã -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/plan_day_period_2"
+                            android:src="@drawable/meiosol"/>
+
+                        <LinearLayout
+                            android:id="@+id/tuesday_morning"
+                            style="@style/plan_day_period_container"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent"/>
+
+                    <!-- Tarde -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/plan_day_period_2"
+                            android:src="@drawable/sol"/>
+
+                        <LinearLayout
+                            android:id="@+id/tuesday_afternoon"
+                            style="@style/plan_day_period_container"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent"/>
+
+                    <!-- Noite -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/plan_day_period_2"
+                            android:src="@drawable/lua"/>
+
+                        <LinearLayout
+                            android:id="@+id/tuesday_night"
+                            style="@style/plan_day_period_container"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Terça -->
+            <!-- Quarta -->
+            <LinearLayout
+                android:id="@+id/wednesday"
+                style="@style/plan_day_container"
+                android:background="@android:color/white">
+                <TextView
+                    style="@style/plan_day_weekday"
+                    android:text="@string/wednesday_short"/>
+
+                <LinearLayout style="@style/plan_day_subject_container">
+                    <!-- Manhã -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/plan_day_period"
+                            android:src="@drawable/meiosol"/>
+
+                        <LinearLayout
+                            android:id="@+id/wednesday_morning"
+                            style="@style/plan_day_period_container"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent"/>
+
+                    <!-- Tarde -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/plan_day_period"
+                            android:src="@drawable/sol"/>
+
+                        <LinearLayout
+                            android:id="@+id/wednesday_afternoon"
+                            style="@style/plan_day_period_container"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent"/>
+
+                    <!-- Noite -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/plan_day_period"
+                            android:src="@drawable/lua"/>
+
+                        <LinearLayout
+                            android:id="@+id/wednesday_night"
+                            style="@style/plan_day_period_container"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Quarta -->
+            <!-- Quinta -->
+            <LinearLayout
+                android:id="@+id/thursday"
+                style="@style/plan_day_container"
+                android:background="@color/gray_light_list">
+                <TextView
+                    style="@style/plan_day_weekday"
+                    android:text="@string/thursday_short"/>
+
+                <LinearLayout style="@style/plan_day_subject_container">
+                    <!-- Manhã -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/plan_day_period_2"
+                            android:src="@drawable/meiosol"/>
+
+                        <LinearLayout
+                            android:id="@+id/thursday_morning"
+                            style="@style/plan_day_period_container"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent"/>
+
+                    <!-- Tarde -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/plan_day_period_2"
+                            android:src="@drawable/sol"/>
+
+                        <LinearLayout
+                            android:id="@+id/thursday_afternoon"
+                            style="@style/plan_day_period_container"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent"/>
+
+                    <!-- Noite -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/plan_day_period_2"
+                            android:src="@drawable/lua"/>
+
+                        <LinearLayout
+                            android:id="@+id/thursday_night"
+                            style="@style/plan_day_period_container"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Quinta -->
+            <!-- Sexta -->
+            <LinearLayout
+                android:id="@+id/friday"
+                style="@style/plan_day_container"
+                android:background="@android:color/white">
+                <TextView
+                    style="@style/plan_day_weekday"
+                    android:text="@string/friday_short"/>
+
+                <LinearLayout style="@style/plan_day_subject_container">
+                    <!-- Manhã -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/plan_day_period"
+                            android:src="@drawable/meiosol"/>
+
+                        <LinearLayout
+                            android:id="@+id/friday_morning"
+                            style="@style/plan_day_period_container"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent"/>
+
+                    <!-- Tarde -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/plan_day_period"
+                            android:src="@drawable/sol"/>
+
+                        <LinearLayout
+                            android:id="@+id/friday_afternoon"
+                            style="@style/plan_day_period_container"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent"/>
+
+                    <!-- Noite -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/plan_day_period"
+                            android:src="@drawable/lua"/>
+
+                        <LinearLayout
+                            android:id="@+id/friday_night"
+                            style="@style/plan_day_period_container"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Sexta -->
+            <!-- Sabado -->
+            <LinearLayout
+                android:id="@+id/saturday"
+                style="@style/plan_day_container"
+                android:background="@color/gray_light_list">
+                <TextView
+                    style="@style/plan_day_weekday"
+                    android:text="@string/saturday_short"/>
+
+                <LinearLayout style="@style/plan_day_subject_container">
+                    <!-- Manhã -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/plan_day_period_2"
+                            android:src="@drawable/meiosol"/>
+
+                        <LinearLayout
+                            android:id="@+id/saturday_morning"
+                            style="@style/plan_day_period_container"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent"/>
+
+                    <!-- Tarde -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/plan_day_period_2"
+                            android:src="@drawable/sol"/>
+
+                        <LinearLayout
+                            android:id="@+id/saturday_afternoon"
+                            style="@style/plan_day_period_container"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent"/>
+
+                    <!-- Noite -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/plan_day_period_2"
+                            android:src="@drawable/lua"/>
+
+                        <LinearLayout
+                            android:id="@+id/saturday_night"
+                            style="@style/plan_day_period_container"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Sabado -->
+            <!-- Domingo -->
+            <LinearLayout
+                android:id="@+id/sunday"
+                style="@style/plan_day_container"
+                android:background="@android:color/white">
+                <TextView
+                    style="@style/plan_day_weekday"
+                    android:text="@string/sunday_short"/>
+
+                <LinearLayout style="@style/plan_day_subject_container">
+                    <!-- Manhã -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/plan_day_period"
+                            android:src="@drawable/meiosol"/>
+
+                        <LinearLayout
+                            android:id="@+id/sunday_morning"
+                            style="@style/plan_day_period_container"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent"/>
+
+                    <!-- Tarde -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/plan_day_period"
+                            android:src="@drawable/sol"/>
+
+                        <LinearLayout
+                            android:id="@+id/sunday_afternoon"
+                            style="@style/plan_day_period_container"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent"/>
+
+                    <!-- Noite -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/plan_day_period"
+                            android:src="@drawable/lua"/>
+
+                        <LinearLayout
+                            android:id="@+id/sunday_night"
+                            style="@style/plan_day_period_container"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+

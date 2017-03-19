@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Smart Study Plan</string>
+    <string name="subject_activity">Matérias</string>
+    <string name="availability_activity">Disponibilidade</string>
+    <string name="custom_availability_activity">Editar Disponibilidade</string>
+    <string name="ease_of_learning_activity">Facilidade de Aprendizado</string>
+    <string name="create_plan_activity">Gerando Plano</string>
+    <string name="study_plan_activity">Meu Plano de Estudo</string>
+    <string name="study_plan_edit_activity">Editar Plano de Estudo</string>
+    <string name="settings_activity">Configurações</string>
+    <string name="settings_tos_activity">Termos e condições de uso</string>
+    <string name="settings_team_activity">Equipe de desenvolvimento</string>
+    <string name="settings_about_activity">Sobre</string>
+    <string name="subject_add">Adicionar Matéria</string>
+    <string name="subject_edit">Editar Matéria</string>
+    <string name="subject_add_menu">Adicionar</string>
+    <string name="subject_edit_menu">Editar</string>
+    <string name="subject_delete_menu">Apagar</string>
+    <string name="name">Nome</string>
+    <string name="subject_name">Nome da matéria</string>
+    <string name="subject_name_empty_messsage">É necessário colocar um nome para a matéria.</string>
+    <string name="subject_name_contain_subject_messsage">Esta matéria já está adicionada.</string>
+    <string name="weight">Peso</string>
+    <string name="difficult">Dificuldade</string>
+    <string name="difficult_abbrev">Dif.</string>
+    <string name="no_subject">Não há matérias inseridas.</string>
+    <string name="light_weight">Pouco</string>
+    <string name="heavy_weight">Muito</string>
+    <string name="easy_difficult">Fácil</string>
+    <string name="hard_difficult">Difícil</string>
+    <string name="continue_label">Continuar</string>
+    <string name="show_plan">Ver Plano de Estudo</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancelar</string>
+    <string name="profile_worker">Perfil Trabalhador</string>
+    <string name="profile_worker_student">Perfil Trabalhador e Estudante</string>
+    <string name="profile_student_morning">Perfil Estudante Matutino</string>
+    <string name="profile_student_afternoon">Perfil Estudante Vespertino</string>
+    <string name="profile_student_night">Perfil Estudante Noturno</string>
+    <string name="profile_customize">Personalize</string>
+    <string name="profile_worker_description">Disponível para estudar de Segunda a Sexta à noite</string>
+    <string name="profile_worker_student_description">Disponível para estudar nos fins de semana</string>
+    <string name="profile_student_morning_description">Disponível para estudar de Segunda a Sexta à tarde e à noite</string>
+    <string name="profile_student_afternoon_description">Disponível para estudar de Segunda a Sexta de manhã e à noite</string>
+    <string name="profile_student_night_description">Disponível para estudar de Segunda a Sexta de manhã e à tarde</string>
+    <string name="profile_customize_description">Para quem gosta de planejar todo o tempo disponível</string>
+    <string name="unavailable">Indisponível</string>
+    <string name="little_available">Pouco disponível</string>
+    <string name="available">Disponível</string>
+    <string name="ease_of_learning_text">Selecione o(s) período(s) do dia em que você tem mais facilidade em estudar:</string>
+    <string name="morning">Manhã</string>
+    <string name="afternoon">Tarde</string>
+    <string name="night">Noite</string>
+    <string name="sunday">Domingo</string>
+    <string name="monday">Segunda</string>
+    <string name="tuesday">Terça</string>
+    <string name="wednesday">Quarta</string>
+    <string name="thursday">Quinta</string>
+    <string name="friday">Sexta</string>
+    <string name="saturday">Sábado</string>
+    <string name="sunday_short">Dom</string>
+    <string name="monday_short">Seg</string>
+    <string name="tuesday_short">Ter</string>
+    <string name="wednesday_short">Qua</string>
+    <string name="thursday_short">Qui</string>
+    <string name="friday_short">Sex</string>
+    <string name="saturday_short">Sáb</string>
+    <string name="generate_study_plan">Gerar Plano de Estudo</string>
+    <string name="empty_subject_list">É necessário ter pelo menos uma matéria adicionada.</string>
+    <string name="add_max_subject_number">O número máximo de matérias permitido na lista é %1$d.</string>
+    <string name="learning_ease_no_period_checked">Pelo menos um período deve estar selecionado.</string>
+    <string name="min_time">30m</string>
+    <string name="time_available_singular">disponível</string>
+    <string name="time_available_plural">disponíveis</string>
+    <string name="menu_edit">Editar</string>
+    <string name="menu_help">Ajuda</string>
+    <string name="menu_create_new_plan">Criar novo plano</string>
+    <string name="menu_suggest_new_plan">Sugerir novo plano</string>
+    <string name="menu_share">Compartilhar</string>
+    <string name="menu_settings">Configurações</string>
+    <string name="created_study_plan">Parabéns, o plano de estudo foi criado com sucesso!\n\nVocê poderá alterar ou gerar um novo plano a qualquer momento.</string>
+    <string name="min_availability">É necessário pelo menos 1 período \'Disponível\' ou 2 \'Pouco disponível\' para os estudos.</string>
+    <string name="share_text">Estou me preparando para os estudos e descobri o Smart Study Plan :) Confira: www.intelectin.com.br/ssp</string>
+
+    <!-- Help -->
+    <string name="help_subject_title">Matérias - Informações</string>
+    <string name="help_subject_text">Aqui você deverá cadastrar as matérias a serem estudadas. Lembrando que, para cada matéria, você deverá cadastrar o peso e o nível de dificuldade.\n\nPara cadastrar basta tocar no botão + no menu superior direito.\n\nAo inserir todas, avance tocando no botão CONTINUAR.</string>
+    <string name="help_availability_title">Disponibilidade - Informações</string>
+    <string name="help_availability_text">Aqui você deverá informar a sua disponibilidade de tempo para cada período do dia em um calendário semanal.\n\nPara facilitar a sua vida, disponibilizamos alguns perfis de usuários pré-cadastrados. Ao selecionar algum deles, o calendário de disponibilidade já vem todo preenchido de acordo com o perfil selecionado.\n\nPor exemplo, ao clicar no perfil Trabalhador, o calendário já vem preenchido como tendo disponibilidade apenas à noite entre segunda e sexta.</string>
+    <string name="help_custom_availability_title">Editar Disponibilidade - Informações</string>
+    <string name="help_custom_availability_text_intro">Nesta tela é possível editar o nível de disponibilidade em cada período.\n\nLembrando que as cores representam:\u0020</string>
+    <string name="help_custom_availability_text_red">Vermelho</string>
+    <string name="help_custom_availability_text_unavailable">\u0020- Estou indisponível. Tentaremos não colocar matérias para você estudar neste período.\n</string>
+    <string name="help_custom_availability_text_yellow">Amarelo</string>
+    <string name="help_custom_availability_text_part_time">\u0020- Estou pouco disponível. Tentaremos preencher o período com matérias, porém não preenchendo todo o tempo.\n</string>
+    <string name="help_custom_availability_text_green">Verde</string>
+    <string name="help_custom_availability_text_available">\u0020- Estou disponível. Tentaremos preencher todo tempo disponível.\n\nAo preencher, você já sabe, basta avançar tocando no botão CONTINUAR.</string>
+    <string name="help_ease_of_learning_title">Facilidade de Aprendizado - Informações</string>
+    <string name="help_ease_of_learning_text">Devem ter períodos do dia em que você tem uma maior facilidade de aprender e períodos que sua mente não funciona tão bem assim. Pois bem, nos informe quais períodos são esses.\n\nEssas informações serão importantes e tentaremos não colocar matérias muito difíceis em períodos que você tem uma maior dificuldade para aprender.\n\nPronto! Este é o último passo. Ao selecionar "GERAR PLANO DE ESTUDOS" iremos montar um plano de estudos com a sua cara.\n\nLembrando que, após gerar o plano, você estará livre para editá-lo como quiser. Com isso você tem a opção de torná-lo ainda mais personalizado.</string>
+    <string name="help_study_plan_title">Meu Plano de Estudo - Informações</string>
+    <string name="help_study_plan_text">Pronto, aqui está o seu plano de estudos. :)\n\nFique à vontade para modificá-lo como quiser e deixá-lo ainda mais com a sua cara. Basta tocar no ícone de Editar no menu superior.\n\nCaso queira outra sugestão de plano basta acessar o menu e selecionar "Sugerir novo plano". Mas lembre-se, ao selecionar essa opção você perderá o plano atual.\n\nNós te lembraremos no período anterior quais matérias você deverá estudar. Por exemplo, se você tem 2 matérias para estudar à noite, te lembraremos à tarde que você terá essas matérias para estudar. Você pode desabilitar essas notificações nas configurações do aplicativo.</string>
+    <string name="help_study_plan_edit_title">Editar Plano de Estudo - Informações</string>
+    <string name="help_study_plan_edit_text">Aqui você pode personalizar o seu plano de estudo de acordo com a sua preferência.\n\nSeguindo orientações de especialistas na área, serão disponibilizados no máximo 5 horas de estudo para cada período.\n\nO tempo disponível, se houver, é informado na faixa cinza abaixo de todas as matérias daquele período.\n\nTocando na faixa cinza, você pode adicionar uma nova matéria naquele período.\n\nPara remover, selecione a matéria e toque no ícone Apagar no menu superior.\n\nPara editar uma matéria, toque nela e em seguida no ícone Editar.\n\nLembre que a soma dos tempos das matérias de um período não pode ultrapassar 5 horas! Mas não se preocupe que faremos o cálculo das horas restantes para você. :)\n\nPara salvar sua edição basta retornar para a tela anterior.</string>
+    <string name="please_wait">Por favor, aguarde</string>
+    <string name="saving">Salvando&#8230;</string>
+
+    <string name="verify_subjects">Analisando matérias adicionadas&#8230;</string>
+    <string name="verify_availability">Analisando disponibilidade de tempo para os estudos&#8230;</string>
+    <string name="verify_ease_of_learn">Analisando facilidade de aprendizado por período&#8230;</string>
+    <string name="create_plan">Análise completa. Criando plano de estudo&#8230;</string>
+    <string name="create_plan_error">Erro ao gerar plano de estudo. Deseja tentar novamente?</string>
+
+    <string-array name="week_day">
+        <item>Domingo</item>
+        <item>Segunda</item>
+        <item>Terça</item>
+        <item>Quarta</item>
+        <item>Quinta</item>
+        <item>Sexta</item>
+        <item>Sábado</item>
+    </string-array>
+
+    <string-array name="day_period">
+        <item>Manhã</item>
+        <item>Tarde</item>
+        <item>Noite</item>
+    </string-array>
+
+    <!-- Settings -->
+    <string name="settings_notification_category">Notificações</string>
+    <string name="settings_notification_title">Notificação de matérias</string>
+    <string name="settings_notification_summary">Deseja receber alertas para lembrar de estudar as matérias?</string>
+
+    <string name="settings_info_category">Informações e contato</string>
+    <string name="settings_contact_title">Entre em contato</string>
+    <string name="settings_contact_summary">Envie suas sugestões, críticas, dúvidas e elogios.</string>
+    <string name="settings_rate_title">Avalie o aplicativo</string>
+    <string name="settings_rate_summary">Gostou do aplicativo? Deixe sua avaliação na Play Store.</string>
+    <string name="settings_tos_title">Termos e condições de uso</string>
+    <string name="settings_tos_url">http://www.intelectin.com.br/ssp/tos.html</string>
+    <string name="settings_about_title">Sobre</string>
+    <string name="settings_dev_title">Equipe de desenvolvimento</string>
+
+    <string name="settings_email">contato@intelectin.com.br</string>
+    <string name="settings_email_subject">Contato pelo Smart Study Plan</string>
+    <string name="settings_email_select_app">Selecione o aplicativo de e-mail</string>
+
+    <string name="settings_about_text">O aplicativo Smart Study Plan tem como objetivo gerar um plano
+        de estudos ideal para cada perfil de aluno de forma automatizada, escalonando da melhor forma
+        possível matérias e respectivas cargas horárias a serem estudadas pelo aluno em cada período
+        do dia em um calendário semanal.\n\nPara isso, o sistema utilizará conceitos de especialistas
+        em aprendizado e cognição humana e Algoritmos Genéticos, que é um campo da Inteligência
+        Artificial. O aplicativo também alertará o usuário através de notificações sobre o que deve
+        ser estudado, ajudando assim o aluno a manter um melhor controle e execução do plano criado.
+        \n\nEste aplicativo foi criado para o concurso INOVApps, realizado pelo Ministério das
+        Comunicações do Brasil.</string>
+    <string name="intelectin_url">http://www.intelectin.com.br</string>
+
+    <string name="settings_team_text_paulo_name">Paulo Barbosa</string>
+    <string name="settings_team_text_paulo_text">Coordenador\npaulo.barbosa@intelectin.com.br</string>
+    <string name="settings_team_text_jatoba_name">Victor Jatobá</string>
+    <string name="settings_team_text_jatoba_text">Líder e idealizador\nvictor.jatoba@intelectin.com.br</string>
+    <string name="settings_team_text_flavio_name">Flávio Kreis</string>
+    <string name="settings_team_text_flavio_text">Desenvolvedor\nflavio.kreis@intelectin.com.br</string>
+    <string name="settings_team_text_soares_name">Victor Soares</string>
+    <string name="settings_team_text_soares_text">Desenvolvedor\nvictor.soares@intelectin.com.br</string>
+
+    <!-- Notification -->
+    <string name="notification_start_message">Lembre-se de estudar</string>
+    <string name="notification_connective">e</string>
+    <string name="notification_morning">amanhã de manhã!</string>
+    <string name="notification_afternoon">hoje à tarde!</string>
+    <string name="notification_night">hoje à noite!</string>
+    <string name="notification_today">hoje!</string>
+
+</resources>

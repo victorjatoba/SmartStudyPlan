@@ -1,0 +1,109 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/orange_dark</item>
+        <item name="colorPrimaryDark">@color/orange_primary_dark</item>
+        <item name="colorAccent">@color/orange_light</item>
+        <item name="actionModeBackground">@color/green_dark</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="orange_action_bar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/orange_dark</item>
+        <item name="android:titleTextStyle">@style/orange_action_bar_text_style</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="">
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+    <style name="orange_action_bar_text_style" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="splashScreenTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+
+        <item name="colorPrimary">@color/green_dark</item>
+        <item name="colorPrimaryDark">@color/green_dark</item>
+        <item name="actionModeBackground">@color/green_dark</item>
+    </style>
+
+    <style name="plan_day_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:weightSum">10</item>
+    </style>
+
+    <style name="plan_day_subject_container">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">8</item>
+    </style>
+
+    <style name="plan_day_weekday">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+       <!-- <item name="android:background">@drawable/bg_calendar_item2</item> -->
+    </style>
+
+    <style name="plan_day_period">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:background">@color/green_light</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="plan_day_period_2">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:background">@color/green_light_2</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="plan_day_period_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">?android:attr/listPreferredItemHeightSmall</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="custom_availability_period">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="custom_availability_weekday">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">24dp</item>
+    </style>
+
+    <style name="custom_availability_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:weightSum">11</item>
+    </style>
+
+</resources>

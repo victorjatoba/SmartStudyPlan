@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/settings_notification_category" />
+
+    <CheckBoxPreference
+        android:key="notification"
+        android:title="@string/settings_notification_title"
+        android:summary="@string/settings_notification_summary"
+        android:defaultValue="true"
+        android:persistent="true"/>
+
+    <PreferenceCategory
+        android:title="@string/settings_info_category" />
+
+    <Preference
+        android:key="id_contact"
+        android:title="@string/settings_contact_title"
+        android:summary="@string/settings_contact_summary" />
+
+    <PreferenceScreen
+        android:key="id_rate"
+        android:title="@string/settings_rate_title"
+        android:summary="@string/settings_rate_summary" />
+
+    <PreferenceScreen
+        android:key="id_tos"
+        android:title="@string/settings_tos_title" />
+
+    <PreferenceScreen
+        android:key="id_about"
+        android:title="@string/settings_about_title" />
+
+    <PreferenceScreen
+        android:key="id_team"
+        android:title="@string/settings_dev_title" />
+
+</PreferenceScreen>
