@@ -1,0 +1,22 @@
+/**
+ * Description of how to configure the development environment.
+ *
+ * @author Victor Jatoba
+ * @version Sun Mar 19 2017
+ */
+
+Versions:
+    JAVA 1.7
+    Android Studio 1.1.0
+    SDK 21.1.2
+    Gradle 2.2
+
+Ubuntu distribution:
+
+Steps to configure:
+    1. Install JDK 1.7 (http://askubuntu.com/questions/761127/how-do-i-install-openjdk-7-on-ubuntu-16-04-or-higher)
+        sudo add-apt-repository ppa:openjdk-r/ppa
+        sudo apt-get update
+        sudo apt-get install openjdk-7-jdk
+    2. Install SDK (See after step 2 from http://askubuntu.com/questions/318246/complete-installation-guide-for-android-sdk-adt-bundle-on-ubuntu)
+    3. Download Android version 1.1.0
