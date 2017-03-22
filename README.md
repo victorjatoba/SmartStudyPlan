@@ -1,4 +1,3 @@
-![alt tag](https://lh3.googleusercontent.com/pIVOXN-okVyF5SM4BIFaPnmoWZNucHSUPnZ6oaOBsBVJw4vvCfbUEGSTcEOGRbC5M44=w300
 # Smart Study Plan
 App to organize and manage studies.
 
