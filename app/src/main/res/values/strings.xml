@@ -102,7 +102,7 @@
     <string name="help_study_plan_title">Meu Plano de Estudo - Informações</string>
     <string name="help_study_plan_text">Pronto, aqui está o seu plano de estudos. :)\n\nFique à vontade para modificá-lo como quiser e deixá-lo ainda mais com a sua cara. Basta tocar no ícone de Editar no menu superior.\n\nCaso queira outra sugestão de plano basta acessar o menu e selecionar "Sugerir novo plano". Mas lembre-se, ao selecionar essa opção você perderá o plano atual.\n\nNós te lembraremos no período anterior quais matérias você deverá estudar. Por exemplo, se você tem 2 matérias para estudar à noite, te lembraremos à tarde que você terá essas matérias para estudar. Você pode desabilitar essas notificações nas configurações do aplicativo.</string>
     <string name="help_study_plan_edit_title">Editar Plano de Estudo - Informações</string>
-    <string name="help_study_plan_edit_text">Aqui você pode personalizar o seu plano de estudo de acordo com a sua preferência.\n\nSeguindo orientações de especialistas na área, serão disponibilizados no máximo 5 horas de estudo para cada período.\n\nO tempo disponível, se houver, é informado na faixa cinza abaixo de todas as matérias daquele período.\n\nTocando na faixa cinza, você pode adicionar uma nova matéria naquele período.\n\nPara remover, selecione a matéria e toque no ícone Apagar no menu superior.\n\nPara editar uma matéria, toque nela e em seguida no ícone Editar.\n\nLembre que a soma dos tempos das matérias de um período não pode ultrapassar 5 horas! Mas não se preocupe que faremos o cálculo das horas restantes para você. :)\n\nPara salvar sua edição basta retornar para a tela anterior.</string>
+    <string name="help_study_plan_edit_text">Aqui você pode personalizar o seu plano de estudo de acordo com a sua preferência.\n\nPara editar uma matéria ou horário, toque nela e em seguida no ícone Editar.\n\nPara remover, selecione a matéria e toque no ícone Apagar no menu superior.\n\nSeguindo orientações de especialistas na área, serão disponibilizados no máximo 5 horas de estudo para cada período.\n\nLembre que a soma dos tempos das matérias de um período não pode ultrapassar 5 horas! Mas não se preocupe que faremos o cálculo das horas restantes para você. :)\n\nPara salvar sua edição basta retornar para a tela anterior.</string>
     <string name="please_wait">Por favor, aguarde</string>
     <string name="saving">Salvando&#8230;</string>
 
@@ -174,5 +174,6 @@
     <string name="notification_afternoon">hoje à tarde!</string>
     <string name="notification_night">hoje à noite!</string>
     <string name="notification_today">hoje!</string>
+    <string name="app_name">Smart Study Plan</string>
 
 </resources>
