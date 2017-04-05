@@ -11,7 +11,7 @@
     <string name="create_plan_activity">Generating Plan</string>
     <string name="create_plan_error">Error when try to generate the study plan. You need to try again?</string>
     <string name="created_study_plan">Congratulation, the study plan was created with successfully!\n\nYou can edit or generate another plan when you want.</string>
-    <string name="custom_availability_activity">Edit Availabitity</string>
+    <string name="custom_availability_activity">Edit Availability</string>
     <string name="difficult">Difficulty</string>
     <string name="difficult_abbrev">Dif.</string>
     <string name="ease_of_learning_activity">Lean easiness</string>
@@ -91,7 +91,7 @@
     <string name="settings_email_select_app">Select the email app</string>
     <string name="settings_email_subject">Smart Study Plan Contact</string>
     <string name="settings_info_category">Contact information</string>
-    <string name="settings_notification_category">Notfications</string>
+    <string name="settings_notification_category">Notifications</string>
     <string name="settings_notification_summary">Do you want to receive alerts to remember to study?</string>
     <string name="settings_notification_title">courses notification</string>
     <string name="settings_rate_summary">Do you like the app? Give us your review in the Play store</string>
@@ -117,4 +117,25 @@
     <string name="subject_name">Course name</string>
     <string name="subject_name_contain_subject_messsage">This course already exist</string>
     <string name="subject_name_empty_messsage">It is necessary to put a course name</string>
+    <string name="sunday">Sunday</string>
+    <string name="sunday_short">Sun</string>
+    <string name="thursday">Thursday</string>
+    <string name="thursday_short">Thu</string>
+    <string name="time_available_plural">Available</string>
+    <string name="time_available_singular">Available</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="tuesday_short">Tue</string>
+    <string name="unavailable">Available</string>
+    <string name="verify_availability">Analyzing the studies availability&#8230;</string>
+    <string name="verify_ease_of_learn">Analyzing easing of learning for each period of time&#8230;</string>
+    <string name="verify_subjects">Analyzing courses added&#8230;</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="wednesday_short">Wed</string>
+    <string name="weight">Weight</string>
+    <string name="settings_about_text">The App aims to generate a study plan automatically
+        scheduling the courses that the student need to study in a weekly calendar.
+        .\n\nFor this, the system uses Artificial intelligence and concepts from the
+        specialists of the learn and cognition area. The app also alert the user what
+        he needs to study, helping students to manage and organize their studies.
+        \n\nThis app win the INOVApps contest, promoted by Brasilian Federal Governament.</string>
 </resources>

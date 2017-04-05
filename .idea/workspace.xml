@@ -14,7 +14,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cf24da04-3ad4-4aa6-b0b8-df9a6714a66e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="smartstudyplan.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +36,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Translations Editor" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Translations Editor" pinned="false" current="false" current-in-tab="false">
         <entry file="android-dummy://smartstudyplan/app/Translations Editor">
           <provider selected="true" editor-type-id="string-resource-editor">
             <state />
@@ -47,18 +46,18 @@
       <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-61.8" vertical-offset="0" max-vertical-offset="2775">
-              <caret line="103" column="634" selection-start-line="103" selection-start-column="634" selection-end-line="103" selection-end-column="634" />
+            <state vertical-scroll-proportion="-15.84" vertical-offset="1899" max-vertical-offset="2775">
+              <caret line="153" column="41" selection-start-line="153" selection-start-column="41" selection-end-line="153" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="strings.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values-en/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-41.4" vertical-offset="0" max-vertical-offset="1875">
-              <caret line="69" column="46" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.5890411" vertical-offset="1314" max-vertical-offset="2190">
+              <caret line="122" column="46" selection-start-line="122" selection-start-column="46" selection-end-line="122" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -1906,18 +1905,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-en/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-41.4" vertical-offset="0" max-vertical-offset="1755">
-          <caret line="69" column="46" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-61.8" vertical-offset="0" max-vertical-offset="2775">
-          <caret line="103" column="634" selection-start-line="103" selection-start-column="634" selection-end-line="103" selection-end-column="634" />
+        <state vertical-scroll-proportion="-15.84" vertical-offset="1899" max-vertical-offset="2775">
+          <caret line="153" column="41" selection-start-line="153" selection-start-column="41" selection-end-line="153" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -1925,6 +1916,14 @@
     <entry file="android-dummy://smartstudyplan/app/Translations Editor">
       <provider selected="true" editor-type-id="string-resource-editor">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-en/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5890411" vertical-offset="1314" max-vertical-offset="2190">
+          <caret line="122" column="46" selection-start-line="122" selection-start-column="46" selection-end-line="122" selection-end-column="46" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
