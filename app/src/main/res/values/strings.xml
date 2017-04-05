@@ -82,7 +82,6 @@
     <string name="menu_settings">Configurações</string>
     <string name="created_study_plan">Parabéns, o plano de estudo foi criado com sucesso!\n\nVocê poderá alterar ou gerar um novo plano a qualquer momento.</string>
     <string name="min_availability">É necessário pelo menos 1 período \'Disponível\' ou 2 \'Pouco disponível\' para os estudos.</string>
-    <string name="share_text">Estou me preparando para os estudos e descobri o Smart Study Plan :) Confira: www.intelectin.com.br/ssp</string>
 
     <!-- Help -->
     <string name="help_subject_title">Matérias - Informações</string>
@@ -139,7 +138,7 @@
     <string name="settings_rate_title">Avalie o aplicativo</string>
     <string name="settings_rate_summary">Gostou do aplicativo? Deixe sua avaliação na Play Store.</string>
     <string name="settings_tos_title">Termos e condições de uso</string>
-    <string name="settings_tos_url">http://www.intelectin.com.br/ssp/tos.html</string>
+    <string name="settings_tos_url" translatable="false">http://www.intelectin.com.br/</string>
     <string name="settings_about_title">Sobre</string>
     <string name="settings_dev_title">Equipe de desenvolvimento</string>
 
@@ -158,13 +157,13 @@
         Comunicações do Brasil.</string>
     <string name="intelectin_url">http://www.intelectin.com.br</string>
 
-    <string name="settings_team_text_paulo_name">Paulo Barbosa</string>
+    <string name="settings_team_text_paulo_name" translatable="false">Paulo Barbosa</string>
     <string name="settings_team_text_paulo_text">Coordenador\npaulo.barbosa@intelectin.com.br</string>
-    <string name="settings_team_text_jatoba_name">Victor Jatobá</string>
+    <string name="settings_team_text_jatoba_name" translatable="false">Victor Jatobá</string>
     <string name="settings_team_text_jatoba_text">Líder e idealizador\nvictor.jatoba@intelectin.com.br</string>
-    <string name="settings_team_text_flavio_name">Flávio Kreis</string>
+    <string name="settings_team_text_flavio_name" translatable="false">Flávio Kreis</string>
     <string name="settings_team_text_flavio_text">Desenvolvedor\nflavio.kreis@intelectin.com.br</string>
-    <string name="settings_team_text_soares_name">Victor Soares</string>
+    <string name="settings_team_text_soares_name" translatable="false">Victor Soares</string>
     <string name="settings_team_text_soares_text">Desenvolvedor\nvictor.soares@intelectin.com.br</string>
 
     <!-- Notification -->
@@ -175,5 +174,6 @@
     <string name="notification_night">hoje à noite!</string>
     <string name="notification_today">hoje!</string>
     <string name="app_name">Smart Study Plan</string>
+    <string name="share_text">Estou me preparando para os estudos e descobri o Smart Study Plan :) Confira: www.intelectin.com.br/ssp</string>
 
 </resources>
