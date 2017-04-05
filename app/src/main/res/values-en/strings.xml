@@ -138,4 +138,20 @@
         specialists of the learn and cognition area. The app also alert the user what
         he needs to study, helping students to manage and organize their studies.
         \n\nThis app win the INOVApps contest, promoted by Brasilian Federal Governament.</string>
+
+    <string-array name="week_day">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+    <string-array name="day_period">
+        <item>Morning</item>
+        <item>Afternoon</item>
+        <item>Night</item>
+    </string-array>
 </resources>
