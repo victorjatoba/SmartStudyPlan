@@ -12,21 +12,18 @@ https://play.google.com/store/apps/details?id=br.com.smartstudyplan&hl=en
 Send a e-mail to: contato@intelectin.com.br
 
 # Authors
-<h3>Victor Jatobá</h3>
 
-<ul>
-  <li>victor.jatoba@intelectin.com.br</li>
-</ul>
-
-<h3>Paulo Barbosa</h3>
-
-<ul>
-  <li>paulo.barbosa@intelectin.com.br</li>
-</ul>
+<dl>
+  <dt>Victor Jatobá</dt>
+  <dd>victor.jatoba@intelectin.com.br</dd>
+  <dt>Paulo Barbosa</dt>
+  <dd>paulo.barbosa@intelectin.com.br</dd>
+</dl>
 
 # Contributors
-
-<ul style="list-style-type:none">
-  <li>Flávio Kreis</li>
-  <li>Victor Soares</li>
-</ul>
+<dl>
+  <dt>Flávio Kreis</dt>
+  
+  <dt>Victor Soares</dt>
+  
+</dl>
