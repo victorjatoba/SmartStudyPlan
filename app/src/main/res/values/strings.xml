@@ -8,7 +8,7 @@
     <string name="ease_of_learning_activity">Facilidade de Aprendizado</string>
     <string name="create_plan_activity">Gerando Plano</string>
     <string name="study_plan_activity">Meu Plano de Estudo</string>
-    <string name="study_plan_edit_activity">Editar Plano de Estudo</string>
+    <string name="study_plan_edit_activity">Modo Edição (Precione voltar para salvar)</string>
     <string name="settings_activity">Configurações</string>
     <string name="settings_tos_activity">Termos e condições de uso</string>
     <string name="settings_team_activity">Equipe de desenvolvimento</string>
@@ -138,7 +138,7 @@
     <string name="settings_rate_title">Avalie o aplicativo</string>
     <string name="settings_rate_summary">Gostou do aplicativo? Deixe sua avaliação na Play Store.</string>
     <string name="settings_tos_title">Termos e condições de uso</string>
-    <string name="settings_tos_url">O melhor App para organizar os estudos! Confira: https://play.google.com/store/apps/details?id=br.com.smartstudyplan&hl=en</string>
+    <string name="settings_tos_url">O melhor App para organizar os estudos! Confira: https://play.google.com/store/apps/details?id=br.com.smartstudyplan</string>
     <string name="settings_about_title">Sobre</string>
     <string name="settings_dev_title">Equipe de desenvolvimento</string>
 
@@ -173,7 +173,6 @@
     <string name="notification_afternoon">hoje à tarde!</string>
     <string name="notification_night">hoje à noite!</string>
     <string name="notification_today">hoje!</string>
-    <string name="app_name">Smart Study Plan</string>
-    <string name="share_text">O melhor App para organizar os estudos! Confira: https://play.google.com/store/apps/details?id=br.com.smartstudyplan&hl=en</string>
+    <string name="share_text">O melhor App para organizar os estudos! Confira: https://play.google.com/store/apps/details?id=br.com.smartstudyplan</string>
 
 </resources>

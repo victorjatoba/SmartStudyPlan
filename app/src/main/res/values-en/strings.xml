@@ -7,15 +7,15 @@
     <string name="available">Available</string>
     <string name="cancel">Cancel</string>
     <string name="continue_label">To continue</string>
-    <string name="create_plan">Completely analysed. Creating the study plan&#8230;</string>
+    <string name="create_plan">Analysis completed successful. Creating the study plan&#8230;</string>
     <string name="create_plan_activity">Generating Plan</string>
     <string name="create_plan_error">Error when try to generate the study plan. You need to try again?</string>
-    <string name="created_study_plan">Congratulation, the study plan was created with successfully!\n\nYou can edit or generate another plan when you want.</string>
+    <string name="created_study_plan">Congratulation, the study plan was created successfully!\n\nYou can edit or generate another plan when you want.</string>
     <string name="custom_availability_activity">Edit Availability</string>
     <string name="difficult">Difficulty</string>
     <string name="difficult_abbrev">Dif.</string>
     <string name="ease_of_learning_activity">Lean easiness</string>
-    <string name="ease_of_learning_text">Select the period(s) of the day(s) that you have more study easiness.</string>
+    <string name="ease_of_learning_text">Select the period(s) of the day(s) that you have more facility to study.</string>
     <string name="easy_difficult">Easy</string>
     <string name="empty_subject_list">Add courses in the (+) button.</string>
     <string name="friday">Friday</string>
@@ -25,7 +25,7 @@
     <string name="heavy_weight">Much</string>
     <string name="help_availability_text">Here you should inform your time availability for each period of the day in a weekly calendar.\n\nTo make your life easier, we provide some pre-registered user profiles. When selecting one of them, the availability calendar is already filled in according to the selected profile.\n\nFor example, when clicking on the Worker profile, the calendar is already filled as availability to study, only in the evening between Monday and Friday.</string>
     <string name="help_availability_title">Availability - Informations</string>
-    <string name="help_custom_availability_text_available">\u0020- I'm availlable. We will try to fill all your available time. Press CONTINUE when you finish.</string>
+    <string name="help_custom_availability_text_available">\u0020- I\'m availlable. We will try to fill all your available time. Press CONTINUE when you finish.</string>
     <string name="help_custom_availability_text_green">Green</string>
     <string name="help_custom_availability_text_intro">In this screen it is possible to edit the availability level in each period.\n\nRemember that the colors represent:\u0020</string>
     <string name="help_custom_availability_text_part_time">\u0020- I have low availability. We will try to fill the periods with courses, but without fill all the time.\n</string>
@@ -39,7 +39,7 @@
     <string name="help_study_plan_edit_title">To edit Study Plan - Informations</string>
     <string name="help_study_plan_text">Nice, you are in your Study Plan now. :)\n\nFell free to edit with your preferences. To do this, touch the Edit icon in the upper menu.\n\nWith you want another Study Plan schedule suggest click on the menu and then select "Suggest another plan". But remember, with you select this option you will lose your actual plan.\n\nWe will remind you what courses you need to study. For example, if you have 2 courses to study in the night, we will remind you in the afternoon. You can disable this notification in the App configuration option.</string>
     <string name="help_study_plan_title">My Study Plan - Informations</string>
-    <string name="help_subject_text">Here, you need to put your courses that you will study. Remember to put for each courses the importance degree and the difficult level.\n\nTo register a new course click in the '+' button localized in the upper menu.\n\nWhen you finish all courses register, follow up touching in the CONTINUE button</string>
+    <string name="help_subject_text">Here, you need to put your courses that you will study. Remember to put for each courses the importance degree and the difficult level.\n\nTo register a new course click in the \'+\' button localized in the upper menu.\n\nWhen you finish all courses register, follow up touching in the CONTINUE button</string>
     <string name="help_subject_title">Courses - Information</string>
     <string name="intelectin_url">http://www.intelectin.com.br</string>
     <string name="learning_ease_no_period_checked">Select a period</string>
@@ -103,11 +103,11 @@
     <string name="settings_team_text_soares_text">Dev\nvictor.soares@intelectin.com.br</string>
     <string name="settings_tos_activity">Privacy and Terms</string>
     <string name="settings_tos_title">Privacy and Terms</string>
-    <string name="share_text">The best App to organize your study! Check it out at https://play.google.com/store/apps/details?id=br.com.smartstudyplan&hl=en</string>
-    <string name="settings_tos_url" translatable="false">The best App to organize your study! Check it out at https://play.google.com/store/apps/details?id=br.com.smartstudyplan&hl=en</string>
+    <string name="share_text">The best App to organize your study! Check it out at https://play.google.com/store/apps/details?id=br.com.smartstudyplan</string>
+    <string name="settings_tos_url">The best App to organize your study! Check it out at https://play.google.com/store/apps/details?id=br.com.smartstudyplan</string>
     <string name="show_plan">See Study Plan</string>
     <string name="study_plan_activity">My Study Plan</string>
-    <string name="study_plan_edit_activity">To edit Study Plan</string>
+    <string name="study_plan_edit_activity">Edit Mode (Press back to save)</string>
     <string name="subject_activity">Course</string>
     <string name="subject_add">Add course</string>
     <string name="subject_add_menu">Add</string>
@@ -125,13 +125,13 @@
     <string name="time_available_singular">Available</string>
     <string name="tuesday">Tuesday</string>
     <string name="tuesday_short">Tue</string>
-    <string name="unavailable">Available</string>
-    <string name="verify_availability">Analyzing the studies availability&#8230;</string>
+    <string name="unavailable">Unavailable</string>
+    <string name="verify_availability">Analyzing the studies availability time&#8230;</string>
     <string name="verify_ease_of_learn">Analyzing easing of learning for each period of time&#8230;</string>
     <string name="verify_subjects">Analyzing courses added&#8230;</string>
     <string name="wednesday">Wednesday</string>
     <string name="wednesday_short">Wed</string>
-    <string name="weight">Weight</string>
+    <string name="weight">Important lvl</string>
     <string name="settings_about_text">The App aims to generate a study plan automatically
         scheduling the courses that the student need to study in a weekly calendar.
         .\n\nFor this, the system uses Artificial intelligence and concepts from the
