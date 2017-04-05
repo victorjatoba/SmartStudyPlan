@@ -103,5 +103,10 @@
     <string name="settings_team_text_soares_text">Dev\nvictor.soares@intelectin.com.br</string>
     <string name="settings_tos_activity">Privacy & Terms</string>
     <string name="settings_tos_title">Privacy & Terms</string>
-    <string name="share_text"></string>
+    <string name="share_text">The best App to organize your study! Check it out at https://play.google.com/store/apps/details?id=br.com.smartstudyplan&hl=en</string>
+    <string name="settings_tos_url" translatable="false">The best App to organize your study! Check it out at https://play.google.com/store/apps/details?id=br.com.smartstudyplan&hl=en</string>
+    <string name="show_plan">See Study Plan</string>
+    <string name="study_plan_activity">My Study Plan</string>
+    <string name="study_plan_edit_activity">To edit Study Plan</string>
+    <string name="subject_activity">Course</string>
 </resources>
