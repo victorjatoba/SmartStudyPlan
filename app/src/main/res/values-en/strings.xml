@@ -14,8 +14,8 @@
     <string name="custom_availability_activity">Edit Availability</string>
     <string name="difficult">Difficulty</string>
     <string name="difficult_abbrev">Dif.</string>
-    <string name="ease_of_learning_activity">Lean easiness</string>
-    <string name="ease_of_learning_text">Select the period(s) of the day(s) that you have more facility to study.</string>
+    <string name="ease_of_learning_activity">Favorite study time</string>
+    <string name="ease_of_learning_text">Select your favorite time to study</string>
     <string name="easy_difficult">Easy</string>
     <string name="empty_subject_list">Add courses in the (+) button.</string>
     <string name="friday">Friday</string>
@@ -33,8 +33,8 @@
     <string name="help_custom_availability_text_unavailable">\u0020- I have no availability. We will try to put no courses within this period.\n</string>
     <string name="help_custom_availability_text_yellow">Yellow</string>
     <string name="help_custom_availability_title">To edit Availability. Informations</string>
-    <string name="help_ease_of_learning_text">They should have periods of the day when you have a greater ease of learning and periods that your mind does not work so well. Let us know what these periods are.\n\nThis information will be important and we will try not to put very difficult courses in periods that you have a high difficult to learning.\n\nNice! This is the last step. When you select the "GENERATE STUDY PLAN" option we will create a fittest study plan for you.\n\nRemember that after generating the plan, you will be free to edit it as you wish. With this you have the option to make it even more personalized.</string>
-    <string name="help_ease_of_learning_title">Easy of learning - Informations</string>
+    <string name="help_ease_of_learning_text">What is your favorite period of the day to study?\n\nDo you like to study in the morning? in the Afternoon? at night? all of them?. This information will be important and we will try not to put very difficult courses in periods that you have a high difficult to learning.</string>
+    <string name="help_ease_of_learning_title">Favorite study time - Informations</string>
     <string name="help_study_plan_edit_text"> Here you can personalize your study plan.\n\nTo edit a subject or a hour, touch them and then in the Edit icon.\n\nTo remove, select the subject and then touch the Remove icon showed in the upper menu.\n\nFollowing the recommendation of cognitive and learning area, we will schedule for you maximum 5 study hours for each period of the day.\n\nRemember that the sum of the period times does not more than 5 hours! But relax, we will do the sum for you. :)\n\nTo save what you edited, just return to the backward screen.</string>
     <string name="help_study_plan_edit_title">To edit Study Plan - Informations</string>
     <string name="help_study_plan_text">Nice, you are in your Study Plan now. :)\n\nFell free to edit with your preferences. To do this, touch the Edit icon in the upper menu.\n\nWith you want another Study Plan schedule suggest click on the menu and then select "Suggest another plan". But remember, with you select this option you will lose your actual plan.\n\nWe will remind you what courses you need to study. For example, if you have 2 courses to study in the night, we will remind you in the afternoon. You can disable this notification in the App configuration option.</string>
@@ -42,7 +42,7 @@
     <string name="help_subject_text">Here, you need to put your courses that you will study. Remember to put for each courses the importance degree and the difficult level.\n\nTo register a new course click in the \'+\' button localized in the upper menu.\n\nWhen you finish all courses register, follow up touching in the CONTINUE button</string>
     <string name="help_subject_title">Courses - Information</string>
     <string name="intelectin_url">http://www.intelectin.com.br</string>
-    <string name="learning_ease_no_period_checked">Select a period</string>
+    <string name="learning_ease_no_period_checked">Select a period of the day</string>
     <string name="light_weight">Low</string>
     <string name="little_available">Low availability</string>
     <string name="menu_create_new_plan">Create a new Plan</string>
@@ -92,13 +92,13 @@
     <string name="settings_email_subject">Smart Study Plan Contact</string>
     <string name="settings_info_category">Contact information</string>
     <string name="settings_notification_category">Notifications</string>
-    <string name="settings_notification_summary">Do you want to receive alerts to remember to study?</string>
+    <string name="settings_notification_summary">Do you want to receive alerts to remember you to study?</string>
     <string name="settings_notification_title">courses notification</string>
     <string name="settings_rate_summary">Do you like the app? Give us your review in the Play store</string>
     <string name="settings_rate_title">Review the app</string>
     <string name="settings_team_activity">Development team</string>
     <string name="settings_team_text_flavio_text">Dev\nflavio.kreis@intelectin.com.br</string>
-    <string name="settings_team_text_jatoba_text">Team leader\nvictor.jatoba@intelectin.com.br</string>
+    <string name="settings_team_text_jatoba_text">Author\nvictor.jatoba@intelectin.com.br</string>
     <string name="settings_team_text_paulo_text">Coordinator\npaulo.barbosa@intelectin.com.br</string>
     <string name="settings_team_text_soares_text">Dev\nvictor.soares@intelectin.com.br</string>
     <string name="settings_tos_activity">Privacy and Terms</string>
@@ -127,11 +127,11 @@
     <string name="tuesday_short">Tue</string>
     <string name="unavailable">Unavailable</string>
     <string name="verify_availability">Analyzing the studies availability time&#8230;</string>
-    <string name="verify_ease_of_learn">Analyzing easing of learning for each period of time&#8230;</string>
+    <string name="verify_ease_of_learn">Analyzing your favorite time to study&#8230;</string>
     <string name="verify_subjects">Analyzing courses added&#8230;</string>
     <string name="wednesday">Wednesday</string>
     <string name="wednesday_short">Wed</string>
-    <string name="weight">Important lvl</string>
+    <string name="weight">Importance lvl</string>
     <string name="settings_about_text">The App aims to generate a study plan automatically
         scheduling the courses that the student need to study in a weekly calendar.
         .\n\nFor this, the system uses Artificial intelligence and concepts from the
