@@ -126,7 +126,7 @@
     <string name="tuesday">Tuesday</string>
     <string name="tuesday_short">Tue</string>
     <string name="unavailable">Unavailable</string>
-    <string name="verify_availability">Analyzing the studies availability time&#8230;</string>
+    <string name="verify_availability">Analyzing study time available&#8230;</string>
     <string name="verify_ease_of_learn">Analyzing your favorite time to study&#8230;</string>
     <string name="verify_subjects">Analyzing courses added&#8230;</string>
     <string name="wednesday">Wednesday</string>
