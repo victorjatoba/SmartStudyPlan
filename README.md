@@ -9,7 +9,7 @@ Android 4.1 and up.
 https://play.google.com/store/apps/details?id=br.com.smartstudyplan&hl=en
 
 # How to contact us?
-Send a e-mail to: contato@intelectin.com.br
+Send a e-mail to: contato(at)intelectin.com.br
 
 # Authors
 
