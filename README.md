@@ -9,15 +9,16 @@ Android 4.1 and up.
 https://play.google.com/store/apps/details?id=br.com.smartstudyplan&hl=en
 
 # How to contact us?
-Send a e-mail to: contato@intelectin.com.br
+Send a e-mail to: contato(at)intelectin.com.br
 
 # Authors
 
 <dl>
   <dt>Victor Jatobá</dt>
-  <dd>victor.jatoba@intelectin.com.br</dd>
+  <dd>victor.jatoba(at)intelectin.com.br</dd>
+  
   <dt>Paulo Barbosa</dt>
-  <dd>paulo.barbosa@intelectin.com.br</dd>
+  <dd>paulo.barbosa(at)intelectin.com.br</dd>
 </dl>
 
 # Contributors
@@ -25,5 +26,6 @@ Send a e-mail to: contato@intelectin.com.br
   <dt>Flávio Kreis</dt>
   
   <dt>Victor Soares</dt>
+  <dd>victorsoarescortes(at)gmail.com</dd>
   
 </dl>
