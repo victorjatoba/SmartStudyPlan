@@ -45,7 +45,7 @@ public class SubjectActivity extends ActionBarActivity {
     /**
      * Determina o máximo de matérias que podem ser adicionados.
      */
-    private static final int MAX_SUBJECTS = 6;
+    private static final int MAX_SUBJECTS = 12;
 
     @ViewById ListView  subjectList;
     @ViewById View      empty;
