@@ -2,3 +2,4 @@ app/build
 *.bin
 *.lock
 /.idea
+/build
