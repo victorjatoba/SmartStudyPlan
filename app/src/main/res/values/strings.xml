@@ -4,7 +4,7 @@
     <string name="add_max_subject_number">The max number allowed is %1$d.</string>
     <string name="afternoon">Afternoon</string>
     <string name="availability_activity">Availability</string>
-    <string name="available">Available</string>
+    <string name="available">Available (until 5h)</string>
     <string name="cancel">Cancel</string>
     <string name="continue_label">To continue</string>
     <string name="create_plan">Analysis completed successful. Creating the study plan&#8230;</string>
@@ -44,7 +44,7 @@
     <string name="intelectin_url">http://www.intelectin.com.br</string>
     <string name="learning_ease_no_period_checked">Select a period of the day</string>
     <string name="light_weight">Low</string>
-    <string name="little_available">Low availability</string>
+    <string name="little_available">Low availability (until 3h)</string>
     <string name="menu_create_new_plan">Create a new Plan</string>
     <string name="menu_edit">Edit</string>
     <string name="menu_help">Help</string>

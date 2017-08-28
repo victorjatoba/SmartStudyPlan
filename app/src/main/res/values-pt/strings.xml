@@ -47,8 +47,8 @@
     <string name="profile_student_night_description">Disponível para estudar de Segunda a Sexta de manhã e à tarde</string>
     <string name="profile_customize_description">Para quem gosta de planejar todo o tempo disponível</string>
     <string name="unavailable">Indisponível</string>
-    <string name="little_available">Pouco disponível</string>
-    <string name="available">Disponível</string>
+    <string name="little_available">Pouco disponível (até 3h)</string>
+    <string name="available">Disponível (até 5h)</string>
     <string name="ease_of_learning_text">Selecione o(s) período(s) do dia em que você tem mais facilidade em estudar:</string>
     <string name="morning">Manhã</string>
     <string name="afternoon">Tarde</string>
