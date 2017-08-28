@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.smartstudyplan" >
+
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+    <!--<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity android:name=".activity.SplashActivity_"
+            android:theme="@style/splashScreenTheme"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.SubjectActivity_"
+            android:label="@string/subject_activity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.AvailabilityActivity_"
+            android:label="@string/availability_activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.CustomAvailabilityActivity_"
+            android:label="@string/custom_availability_activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.EaseOfLearningActivity_"
+            android:label="@string/ease_of_learning_activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.CreatePlanActivity_"
+            android:label="@string/create_plan_activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.CalendarSubjectActivity_"
+            android:label="@string/study_plan_activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.CalendarSubjectEditActivity_"
+            android:label="@string/study_plan_edit_activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.HelpActivity_"
+            android:theme="@style/Theme.AppCompat.Translucent"
+            android:screenOrientation="portrait" />
+
+        <!-- Settings -->
+        <activity
+            android:name=".activity.settings.SettingsActivity_"
+            android:label="@string/settings_activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.settings.SettingsTeamActivity_"
+            android:label="@string/settings_team_activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.settings.SettingsTosActivity_"
+            android:label="@string/settings_tos_activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.settings.SettingsAboutActivity_"
+            android:label="@string/settings_about_activity"
+            android:screenOrientation="portrait" />
+
+        <!-- Providers -->
+        <provider
+            android:name=".provider.StudyPlanProvider"
+            android:authorities="br.com.smartstudyplan.provider"
+            android:exported="false" />
+
+        <!-- Receivers -->
+        <receiver android:name=".notification.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="br.com.smartstudyplan.CREATED_PLAN" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".notification.NotificationAlarmReceiver">
+        </receiver>
+
+    </application>
+
+</manifest>

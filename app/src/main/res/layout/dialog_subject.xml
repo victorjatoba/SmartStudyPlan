@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/subject_add"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/orange_dark"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="12dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_below="@id/title">
+
+        <EditText
+            android:id="@+id/edit_subject_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearance"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:inputType="text|textCapSentences"
+            android:singleLine="true"
+            android:maxLength="40"
+            android:imeOptions="actionDone"
+            android:hint="@string/subject_name" />
+
+        <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/icon_grid"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:columnWidth="70dp"
+            android:verticalSpacing="4dp"
+            android:numColumns="5"
+            android:stretchMode="columnWidth"
+            android:listSelector="@drawable/icon_selector"
+            android:choiceMode="singleChoice"
+            android:layout_marginTop="4dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:id="@+id/weight_seek_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/weight" />
+
+            <SeekBar
+                android:id="@+id/weight_seek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/custom_seekbar"
+                android:thumb="@drawable/circle_difficult_1"
+                android:maxHeight="4dp"
+                android:layout_below="@id/weight_seek_label"
+                android:max="100"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/light_weight"
+                android:layout_below="@id/weight_seek"
+                android:layout_alignParentLeft="true"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/heavy_weight"
+                android:layout_below="@id/weight_seek"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/difficult_seek_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/difficult" />
+
+            <SeekBar
+                android:id="@+id/difficult_seek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/custom_seekbar"
+                android:thumb="@drawable/circle_difficult_1"
+                android:maxHeight="4dp"
+                android:layout_below="@id/difficult_seek_label"
+                android:max="100" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/easy_difficult"
+                android:layout_below="@id/difficult_seek"
+                android:layout_alignParentLeft="true"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hard_difficult"
+                android:layout_below="@id/difficult_seek"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

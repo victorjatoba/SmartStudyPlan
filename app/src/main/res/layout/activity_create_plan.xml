@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_actionbar"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:animateLayoutChanges="true">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/finished_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/green_light"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:padding="25dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/created_plan_check"
+            android:background="@drawable/circle_difficult_3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center"
+            android:paddingRight="24dp"
+            android:paddingLeft="24dp"
+            android:textColor="@color/white"
+            android:text="@string/created_study_plan"/>
+
+        <Button
+            android:id="@+id/continue_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_orange"
+            android:textColor="@color/white"
+            android:text="@string/show_plan"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

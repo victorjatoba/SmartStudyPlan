@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/orange_dark"/>
+
+        <Button
+            android:id="@+id/custom_availability_continue_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_btn_orange"
+            android:textColor="@color/white"
+            android:text="@string/continue_label"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/custom_availability_help_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_help"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:weightSum="11"
+        android:background="@color/green_dark"
+        android:layout_below="@id/toolbar_actionbar">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/morning"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/afternoon"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/night"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="7"
+        android:layout_above="@id/bottom"
+        android:layout_below="@id/title">
+
+        <LinearLayout
+            style="@style/custom_availability_container"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/custom_availability_weekday"
+                android:text="@string/monday" />
+
+            <ImageView
+                android:id="@+id/monday_morning"
+                style="@style/custom_availability_period"/>
+
+            <ImageView
+                android:id="@+id/monday_afternoon"
+                style="@style/custom_availability_period"/>
+
+            <ImageView
+                android:id="@+id/monday_night"
+                style="@style/custom_availability_period"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/custom_availability_container"
+            android:background="@color/gray_light_list">
+
+            <TextView
+                style="@style/custom_availability_weekday"
+                android:text="@string/tuesday" />
+
+            <ImageView
+                android:id="@+id/tuesday_morning"
+                style="@style/custom_availability_period"/>
+
+            <ImageView
+                android:id="@+id/tuesday_afternoon"
+                style="@style/custom_availability_period"/>
+
+            <ImageView
+                android:id="@+id/tuesday_night"
+                style="@style/custom_availability_period"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/custom_availability_container"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/custom_availability_weekday"
+                android:text="@string/wednesday" />
+
+            <ImageView
+                android:id="@+id/wednesday_morning"
+                style="@style/custom_availability_period"/>
+
+            <ImageView
+                android:id="@+id/wednesday_afternoon"
+                style="@style/custom_availability_period"/>
+
+            <ImageView
+                android:id="@+id/wednesday_night"
+                style="@style/custom_availability_period"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/custom_availability_container"
+            android:background="@color/gray_light_list">
+
+            <TextView
+                style="@style/custom_availability_weekday"
+                android:text="@string/thursday" />
+
+            <ImageView
+                android:id="@+id/thursday_morning"
+                style="@style/custom_availability_period"/>
+
+            <ImageView
+                android:id="@+id/thursday_afternoon"
+                style="@style/custom_availability_period"/>
+
+            <ImageView
+                android:id="@+id/thursday_night"
+                style="@style/custom_availability_period"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/custom_availability_container"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/custom_availability_weekday"
+                android:text="@string/friday" />
+
+            <ImageView
+                android:id="@+id/friday_morning"
+                style="@style/custom_availability_period"/>
+
+            <ImageView
+                android:id="@+id/friday_afternoon"
+                style="@style/custom_availability_period"/>
+
+            <ImageView
+                android:id="@+id/friday_night"
+                style="@style/custom_availability_period"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/custom_availability_container"
+            android:background="@color/gray_light_list">
+
+            <TextView
+                style="@style/custom_availability_weekday"
+                android:text="@string/saturday" />
+
+            <ImageView
+                android:id="@+id/saturday_morning"
+                style="@style/custom_availability_period"/>
+
+            <ImageView
+                android:id="@+id/saturday_afternoon"
+                style="@style/custom_availability_period"/>
+
+            <ImageView
+                android:id="@+id/saturday_night"
+                style="@style/custom_availability_period"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/custom_availability_container"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/custom_availability_weekday"
+                android:text="@string/sunday" />
+
+            <ImageView
+                android:id="@+id/sunday_morning"
+                style="@style/custom_availability_period"/>
+
+            <ImageView
+                android:id="@+id/sunday_afternoon"
+                style="@style/custom_availability_period"/>
+
+            <ImageView
+                android:id="@+id/sunday_night"
+                style="@style/custom_availability_period"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_below="@id/title"
+        android:background="@drawable/gd_subject_title"/>
+
+</RelativeLayout>
+
+

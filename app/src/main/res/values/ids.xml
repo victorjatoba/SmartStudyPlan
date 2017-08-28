@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="weekday_id"   type="id"/>
+    <item name="period_id"    type="id"/>
+    <item name="available_id" type="id"/>
+
+    <item name="add_subject" type="id"/>
+</resources>

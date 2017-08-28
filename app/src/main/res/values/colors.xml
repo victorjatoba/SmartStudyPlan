@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="green_dark">#03767C</color>
+    <color name="green_light">#0091A0</color>
+    <color name="green_light_2">#008594</color>
+
+    <color name="orange_primary_dark">#bf3f2e</color>
+    <color name="orange_dark">#D1513C</color>
+    <color name="orange_light">#F66744</color>
+
+    <color name="gray_dark">#B1B2B2</color>
+    <color name="gray_light_list">#F0F0F0</color>
+
+    <color name="white">@android:color/white</color>
+
+    <color name="difficult_1">#006633</color>
+    <color name="difficult_2">#6F7C1F</color>
+    <color name="difficult_3">#FFB741</color>
+    <color name="difficult_4">#FC8930</color>
+    <color name="difficult_5">#C1272D</color>
+
+</resources>
