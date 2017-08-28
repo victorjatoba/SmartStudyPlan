@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_team_text_paulo_name" translatable="false">Paulo Barbosa</string>
+    <string name="settings_team_text_jatoba_name" translatable="false">Victor Jatobá</string>
+    <string name="settings_team_text_flavio_name" translatable="false">Flávio Kreis</string>
+    <string name="settings_team_text_soares_name" translatable="false">Victor Soares</string>
+</resources>

@@ -157,13 +157,9 @@
         Comunicações do Brasil.</string>
     <string name="intelectin_url">http://www.intelectin.com.br</string>
 
-    <string name="settings_team_text_paulo_name" translatable="false">Paulo Barbosa</string>
     <string name="settings_team_text_paulo_text">Coordenador\npaulo.barbosa@intelectin.com.br</string>
-    <string name="settings_team_text_jatoba_name" translatable="false">Victor Jatobá</string>
     <string name="settings_team_text_jatoba_text">Líder e idealizador\nvictor.jatoba@intelectin.com.br</string>
-    <string name="settings_team_text_flavio_name" translatable="false">Flávio Kreis</string>
     <string name="settings_team_text_flavio_text">Desenvolvedor\nflavio.kreis@intelectin.com.br</string>
-    <string name="settings_team_text_soares_name" translatable="false">Victor Soares</string>
     <string name="settings_team_text_soares_text">Desenvolvedor\nvictor.soares@intelectin.com.br</string>
 
     <!-- Notification -->
