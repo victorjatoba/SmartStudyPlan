@@ -1,143 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">Smart Study Plan</string>
-    <string name="add_max_subject_number">The max number allowed is %1$d.</string>
-    <string name="afternoon">Afternoon</string>
+    <string name="subject_activity">Course</string>
     <string name="availability_activity">Availability</string>
-    <string name="available">Available (until 5h)</string>
-    <string name="cancel">Cancel</string>
-    <string name="continue_label">To continue</string>
-    <string name="create_plan">Analysis completed successful. Creating the study plan&#8230;</string>
-    <string name="create_plan_activity">Generating Plan</string>
-    <string name="create_plan_error">Error when try to generate the study plan. You need to try again?</string>
-    <string name="created_study_plan">Congratulation, the study plan was created successfully!\n\nYou can edit or generate another plan when you want.</string>
     <string name="custom_availability_activity">Edit Availability</string>
-    <string name="difficult">Difficulty</string>
-    <string name="difficult_abbrev">Dif.</string>
     <string name="ease_of_learning_activity">Favorite study time</string>
-    <string name="ease_of_learning_text">Select your favorite time to study</string>
-    <string name="easy_difficult">Easy</string>
-    <string name="empty_subject_list">Add courses in the (+) button.</string>
-    <string name="friday">Friday</string>
-    <string name="friday_short">Fri</string>
-    <string name="generate_study_plan">To generate Study Plan</string>
-    <string name="hard_difficult">Difficult</string>
+    <string name="create_plan_activity">Generating Plan</string>
+    <string name="study_plan_activity">My Study Plan</string>
+    <string name="study_plan_edit_activity">Edit Mode (Press back to save)</string>
+    <string name="settings_activity">Settings</string>
+    <string name="settings_tos_activity">Privacy and Terms</string>
+    <string name="settings_team_activity">Development team</string>
+    <string name="settings_about_activity">About</string>
+    <string name="subject_add">Add course</string>
+    <string name="subject_edit">Edit course</string>
+    <string name="subject_add_menu">Add</string>
+    <string name="subject_edit_menu">Edit</string>
+    <string name="subject_delete_menu">Delete</string>
+    <string name="name">Name</string>
+    <string name="subject_name">Course name</string>
+    <string name="subject_name_empty_messsage">It is necessary to put a course name.</string>
+    <string name="subject_name_contain_subject_messsage">This course already exist.</string>
+    <string name="weight">Weight</string>
+    <string name="difficult">Difficult</string>
+    <string name="difficult_abbrev">Dif.</string>
+    <string name="no_subject">Have no courses</string>
+    <string name="light_weight">Low</string>
     <string name="heavy_weight">Much</string>
-    <string name="help_availability_text">Here you should inform your time availability for each period of the day in a weekly calendar.\n\nTo make your life easier, we provide some pre-registered user profiles. When selecting one of them, the availability calendar is already filled in according to the selected profile.\n\nFor example, when clicking on the Worker profile, the calendar is already filled as availability to study, only in the evening between Monday and Friday.</string>
+    <string name="easy_difficult">Easy</string>
+    <string name="hard_difficult">Difficult</string>
+    <string name="continue_label">Continue</string>
+    <string name="show_plan">See Study Plan</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="profile_worker">Worker Profile</string>
+    <string name="profile_worker_student">Worker and Student Profile</string>
+    <string name="profile_student_morning">Evening Student Profile</string>
+    <string name="profile_student_afternoon">Afternoon Student Profile</string>
+    <string name="profile_student_night">Night Student Profile</string>
+    <string name="profile_customize">Personalize it</string>
+    <string name="profile_worker_description">Available to study from monday to friday at night</string>
+    <string name="profile_worker_student_description">Available to study in the weekend</string>
+    <string name="profile_student_morning_description">Available to study from monday to friday afternoon and night</string>
+    <string name="profile_student_afternoon_description">Available to study from monday to friday morning and night</string>
+    <string name="profile_student_night_description">Available to study from monday to friday morning and afternoon</string>
+    <string name="profile_customize_description">For the person that like to plan all available time</string>
+    <string name="unavailable">Unavailable</string>
+    <string name="little_available">Low availability (until 3h)</string>
+    <string name="available">Available (until 5h)</string>
+    <string name="ease_of_learning_text">Selecione o(s) período(s) do dia em que você tem mais facilidade em estudar:</string>
+    <string name="morning">Morning</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="night">Night</string>
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday_short">Sun</string>
+    <string name="monday_short">Mon</string>
+    <string name="tuesday_short">Tue</string>
+    <string name="wednesday_short">Wed</string>
+    <string name="thursday_short">Thu</string>
+    <string name="friday_short">Fri</string>
+    <string name="saturday_short">Sat</string>
+    <string name="generate_study_plan">To generate Study Plan</string>
+    <string name="empty_subject_list">Add courses in the (+) button.</string>
+    <string name="add_max_subject_number">The max number allowed is %1$d.</string>
+    <string name="learning_ease_no_period_checked">Select a period of the day.</string>
+    <string name="time_available_singular">Available</string>
+    <string name="time_available_plural">Available</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_create_new_plan">Create a new Plan</string>
+    <string name="menu_suggest_new_plan">Suggest a new plan</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_settings">Settings</string>
+    <string name="created_study_plan">Congratulation, the study plan was created successfully!\n\nYou can edit or generate another plan when you want.</string>
+    <string name="min_availability">Inform your availability</string>
+
+    <!-- Help -->
+    <string name="help_subject_title">Courses - Information</string>
+    <string name="help_subject_text">Here, you need to put your courses that you will study. Remember to put for each courses the importance degree and the difficult level.\n\nTo register a new course click in the \'+\' button localized in the upper menu.\n\nWhen you finish all courses register, follow up touching in the CONTINUE button</string>
     <string name="help_availability_title">Availability - Informations</string>
-    <string name="help_custom_availability_text_available">\u0020- I\'m availlable. We will try to fill all your available time. Press CONTINUE when you finish.</string>
-    <string name="help_custom_availability_text_green">Green</string>
+    <string name="help_availability_text">Here you should inform your time availability for each period of the day in a weekly calendar.\n\nTo make your life easier, we provide some pre-registered user profiles. When selecting one of them, the availability calendar is already filled in according to the selected profile.\n\nFor example, when clicking on the Worker profile, the calendar is already filled as availability to study, only in the evening between Monday and Friday.</string>
+    <string name="help_custom_availability_title">To edit Availability. Informations</string>
     <string name="help_custom_availability_text_intro">In this screen it is possible to edit the availability level in each period.\n\nRemember that the colors represent:\u0020</string>
-    <string name="help_custom_availability_text_part_time">\u0020- I have low availability. We will try to fill the periods with courses, but without fill all the time.\n</string>
     <string name="help_custom_availability_text_red">Red</string>
     <string name="help_custom_availability_text_unavailable">\u0020- I have no availability. We will try to put no courses within this period.\n</string>
     <string name="help_custom_availability_text_yellow">Yellow</string>
-    <string name="help_custom_availability_title">To edit Availability. Informations</string>
-    <string name="help_ease_of_learning_text">What is your favorite period of the day to study?\n\nDo you like to study in the morning? in the Afternoon? at night? all of them?. This information will be important and we will try not to put very difficult courses in periods that you have a high difficult to learning.</string>
+    <string name="help_custom_availability_text_part_time">\u0020- I have low availability. We will try to fill the periods with courses, but without fill all the time.\n</string>
+    <string name="help_custom_availability_text_green">Green</string>
+    <string name="help_custom_availability_text_available">\u0020- I\'m availlable. We will try to fill all your available time. Press CONTINUE when you finish.</string>
     <string name="help_ease_of_learning_title">Favorite study time - Informations</string>
-    <string name="help_study_plan_edit_text"> Here you can personalize your study plan.\n\nTo edit a subject or a hour, touch them and then in the Edit icon.\n\nTo remove, select the subject and then touch the Remove icon showed in the upper menu.\n\nFollowing the recommendation of cognitive and learning area, we will schedule for you maximum 5 study hours for each period of the day.\n\nRemember that the sum of the period times does not more than 5 hours! But relax, we will do the sum for you. :)\n\nTo save what you edited, just return to the backward screen.</string>
-    <string name="help_study_plan_edit_title">To edit Study Plan - Informations</string>
-    <string name="help_study_plan_text">Nice, you are in your Study Plan now. :)\n\nFell free to edit with your preferences. To do this, touch the Edit icon in the upper menu.\n\nWith you want another Study Plan schedule suggest click on the menu and then select "Suggest another plan". But remember, with you select this option you will lose your actual plan.\n\nWe will remind you what courses you need to study. For example, if you have 2 courses to study in the night, we will remind you in the afternoon. You can disable this notification in the App configuration option.</string>
+    <string name="help_ease_of_learning_text">What is your favorite period of the day to study?\n\nDo you like to study in the morning? in the Afternoon? at night? all of them?. This information will be important and we will try not to put very difficult courses in periods that you have a high difficult to learning.</string>
     <string name="help_study_plan_title">My Study Plan - Informations</string>
-    <string name="help_subject_text">Here, you need to put your courses that you will study. Remember to put for each courses the importance degree and the difficult level.\n\nTo register a new course click in the \'+\' button localized in the upper menu.\n\nWhen you finish all courses register, follow up touching in the CONTINUE button</string>
-    <string name="help_subject_title">Courses - Information</string>
-    <string name="intelectin_url">http://www.intelectin.com.br</string>
-    <string name="learning_ease_no_period_checked">Select a period of the day</string>
-    <string name="light_weight">Low</string>
-    <string name="little_available">Low availability (until 3h)</string>
-    <string name="menu_create_new_plan">Create a new Plan</string>
-    <string name="menu_edit">Edit</string>
-    <string name="menu_help">Help</string>
-    <string name="menu_settings">Settings</string>
-    <string name="menu_share">Sharing</string>
-    <string name="menu_suggest_new_plan">Suggest a new plan</string>
-    <string name="min_availability">Inform your availability</string>
-    <string name="monday">Monday</string>
-    <string name="monday_short">Mon</string>
-    <string name="morning">Morning</string>
-    <string name="name">Name</string>
-    <string name="night">Night</string>
-    <string name="no_subject">Have no courses</string>
-    <string name="notification_afternoon">This afternoon</string>
-    <string name="notification_connective">and</string>
-    <string name="notification_morning">Tomorrow morning</string>
-    <string name="notification_night">This night</string>
-    <string name="notification_start_message">Remember to study</string>
-    <string name="notification_today">Today!</string>
-    <string name="ok">OK</string>
+    <string name="help_study_plan_text">Nice, you are in your Study Plan now. :)\n\nFell free to edit with your preferences. To do this, touch the Edit icon in the upper menu.\n\nWith you want another Study Plan schedule suggest click on the menu and then select "Suggest another plan". But remember, with you select this option you will lose your actual plan.\n\nWe will remind you what courses you need to study. For example, if you have 2 courses to study in the night, we will remind you in the afternoon. You can disable this notification in the App configuration option.</string>
+    <string name="help_study_plan_edit_title">To edit Study Plan - Informations</string>
+    <string name="help_study_plan_edit_text">Here you can personalize your study plan.\n\nTo edit a subject or a hour, touch them and then in the Edit icon.\n\nTo remove, select the subject and then touch the Remove icon showed in the upper menu.\n\nFollowing the recommendation of cognitive and learning area, we will schedule for you maximum 5 study hours for each period of the day.\n\nRemember that the sum of the period times does not more than 5 hours! But relax, we will do the sum for you. :)\n\nTo save what you edited, just return to the backward screen.</string>
     <string name="please_wait">Wait, please</string>
-    <string name="profile_customize">Personalize it</string>
-    <string name="profile_customize_description">For the person that like to plan all available time</string>
-    <string name="profile_student_afternoon">Afternoon Student Profile</string>
-    <string name="profile_student_afternoon_description">Available to study from monday to friday morning and night</string>
-    <string name="profile_student_morning">Evening Student Profile</string>
-    <string name="profile_student_morning_description">Available to study from monday to friday afternoon and night</string>
-    <string name="profile_student_night">Night Student Profile</string>
-    <string name="profile_student_night_description">Available to study from monday to friday morning and afternoon</string>
-    <string name="profile_worker">Worker</string>
-    <string name="profile_worker_description">Available to study from monday to friday at night</string>
-    <string name="profile_worker_student">Worker and Student Profile</string>
-    <string name="profile_worker_student_description">Available to study in the weekend</string>
-    <string name="saturday">Saturday</string>
-    <string name="saturday_short">Sat</string>
     <string name="saving">Saving&#8230;</string>
-    <string name="settings_about_activity">About</string>
-    <string name="settings_about_title">About</string>
-    <string name="settings_activity">Settings</string>
-    <string name="settings_contact_summary">Send your feedback, suggestion and doubt</string>
-    <string name="settings_contact_title">Contact us</string>
-    <string name="settings_dev_title">Development team</string>
-    <string name="settings_email">contato@intelectin.com.br</string>
-    <string name="settings_email_select_app">Select the email app</string>
-    <string name="settings_email_subject">Smart Study Plan Contact</string>
-    <string name="settings_info_category">Contact information</string>
-    <string name="settings_notification_category">Notifications</string>
-    <string name="settings_notification_summary">Do you want to receive alerts to remember you to study?</string>
-    <string name="settings_notification_title">courses notification</string>
-    <string name="settings_rate_summary">Do you like the app? Give us your review in the Play store</string>
-    <string name="settings_rate_title">Review the app</string>
-    <string name="settings_team_activity">Development team</string>
-    <string name="settings_team_text_flavio_text">Dev\nflavio.kreis@intelectin.com.br</string>
-    <string name="settings_team_text_jatoba_text">Author\nvictor.jatoba@intelectin.com.br</string>
-    <string name="settings_team_text_paulo_text">Coordinator\npaulo.barbosa@intelectin.com.br</string>
-    <string name="settings_team_text_soares_text">Dev\nvictor.soares@intelectin.com.br</string>
-    <string name="settings_tos_activity">Privacy and Terms</string>
-    <string name="settings_tos_title">Privacy and Terms</string>
-    <string name="share_text">The best App to organize your study! Check it out at https://play.google.com/store/apps/details?id=br.com.smartstudyplan</string>
-    <string name="settings_tos_url">The best App to organize your study! Check it out at https://play.google.com/store/apps/details?id=br.com.smartstudyplan</string>
-    <string name="show_plan">See Study Plan</string>
-    <string name="study_plan_activity">My Study Plan</string>
-    <string name="study_plan_edit_activity">Edit Mode (Press back to save)</string>
-    <string name="subject_activity">Course</string>
-    <string name="subject_add">Add course</string>
-    <string name="subject_add_menu">Add</string>
-    <string name="subject_delete_menu">Delete</string>
-    <string name="subject_edit">To edit course</string>
-    <string name="subject_edit_menu">To edit</string>
-    <string name="subject_name">Course name</string>
-    <string name="subject_name_contain_subject_messsage">This course already exist</string>
-    <string name="subject_name_empty_messsage">It is necessary to put a course name</string>
-    <string name="sunday">Sunday</string>
-    <string name="sunday_short">Sun</string>
-    <string name="thursday">Thursday</string>
-    <string name="thursday_short">Thu</string>
-    <string name="time_available_plural">Available</string>
-    <string name="time_available_singular">Available</string>
-    <string name="tuesday">Tuesday</string>
-    <string name="tuesday_short">Tue</string>
-    <string name="unavailable">Unavailable</string>
+
+    <string name="verify_subjects">Analyzing courses added&#8230;</string>
     <string name="verify_availability">Analyzing study time available&#8230;</string>
     <string name="verify_ease_of_learn">Analyzing your favorite time to study&#8230;</string>
-    <string name="verify_subjects">Analyzing courses added&#8230;</string>
-    <string name="wednesday">Wednesday</string>
-    <string name="wednesday_short">Wed</string>
-    <string name="weight">Importance lvl</string>
-    <string name="settings_about_text">The App aims to generate a study plan automatically
-        scheduling the courses that the student need to study in a weekly calendar.
-        .\n\nFor this, the system uses Artificial intelligence and concepts from the
-        specialists of the learn and cognition area. The app also alert the user what
-        he needs to study, helping students to manage and organize their studies.
-        \n\nThis app win the INOVApps contest, promoted by Brasilian Federal Governament.</string>
+    <string name="create_plan">Analysis completed successful. Creating the study plan&#8230;</string>
+    <string name="create_plan_error">Error when try to generate the study plan. You need to try again?</string>
 
     <string-array name="week_day">
         <item>Sunday</item>
@@ -154,4 +125,46 @@
         <item>Afternoon</item>
         <item>Night</item>
     </string-array>
+
+    <!-- Settings -->
+    <string name="settings_notification_category">Notifications</string>
+    <string name="settings_notification_title">Courses notification</string>
+    <string name="settings_notification_summary">Do you want to receive alerts to remember you to study?</string>
+
+    <string name="settings_info_category">Contact information</string>
+    <string name="settings_contact_title">Contact us</string>
+    <string name="settings_contact_summary">Send your feedback, suggestion and doubt</string>
+    <string name="settings_rate_title">Review the app</string>
+    <string name="settings_rate_summary">Do you like the app? Give us your review in the Play store</string>
+    <string name="settings_tos_title">Privacy and Terms</string>
+    <string name="settings_tos_url">The best App to organize your study! Check it out at https://play.google.com/store/apps/details?id=br.com.smartstudyplan</string>
+    <string name="settings_about_title">About</string>
+    <string name="settings_dev_title">Development team</string>
+
+    <string name="settings_email">contato@intelectin.com.br</string>
+    <string name="settings_email_subject">Smart Study Plan Contact</string>
+    <string name="settings_email_select_app">Select the email app</string>
+
+    <string name="settings_about_text">The App aims to generate a study plan automatically
+        scheduling the courses that the student need to study in a weekly calendar.
+        .\n\nFor this, the system uses Artificial intelligence and concepts from the
+        specialists of the learn and cognition area. The app also alert the user what
+        he needs to study, helping students to manage and organize their studies.
+        \n\nThis app win the INOVApps contest, promoted by Brasilian Federal Governament.</string>
+    <string name="intelectin_url">http://www.intelectin.com.br</string>
+
+    <string name="settings_team_text_paulo_text">Coordinator\npaulo.barbosa@intelectin.com.br</string>
+    <string name="settings_team_text_jatoba_text">Author\nvictor.jatoba@intelectin.com.br</string>
+    <string name="settings_team_text_flavio_text">Dev\nflavio.kreis@intelectin.com.br</string>
+    <string name="settings_team_text_soares_text">Dev\nvictor.soares@intelectin.com.br</string>
+
+    <!-- Notification -->
+    <string name="notification_start_message">Remember to study</string>
+    <string name="notification_connective">and</string>
+    <string name="notification_morning">Tomorrow morning!</string>
+    <string name="notification_afternoon">This afternoon!</string>
+    <string name="notification_night">This night!</string>
+    <string name="notification_today">Today!</string>
+    <string name="share_text">The best App to organize your study! Check it out at https://play.google.com/store/apps/details?id=br.com.smartstudyplan</string>
+
 </resources>

@@ -71,7 +71,6 @@
     <string name="empty_subject_list">É necessário ter pelo menos uma matéria adicionada.</string>
     <string name="add_max_subject_number">O número máximo de matérias permitido na lista é %1$d.</string>
     <string name="learning_ease_no_period_checked">Pelo menos um período deve estar selecionado.</string>
-    <string name="min_time" translatable="false">30m</string>
     <string name="time_available_singular">disponível</string>
     <string name="time_available_plural">disponíveis</string>
     <string name="menu_edit">Editar</string>
