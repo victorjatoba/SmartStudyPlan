@@ -162,9 +162,11 @@ public class SubjectActivity extends AppCompatActivity {
      */
     @ItemClick
     void subjectListItemClicked( Subject subject ){
-        ActionMode mActionMode = getSupportActionBar().startActionMode( mActionModeCallBack );
-        mActionMode.setTitle(R.string.subject_edit);
-        mActionMode.setTag(subject);
+        ActionMode mActionMode = startSupportActionMode( mActionModeCallBack );
+        if (mActionMode != null) {
+            mActionMode.setTitle(R.string.subject_edit);
+            mActionMode.setTag(subject);
+        }
 
         adapter.setSelectedSubject( subject );
     }
