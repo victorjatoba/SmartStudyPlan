@@ -1,6 +1,7 @@
 package br.com.smartstudyplan.activity;
 
 import android.annotation.SuppressLint;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.view.ActionMode;
 import android.support.v7.widget.Toolbar;
@@ -164,6 +165,9 @@ public class SubjectActivity extends AppCompatActivity {
     void subjectListItemClicked( Subject subject ){
         ActionMode mActionMode = startSupportActionMode( mActionModeCallBack );
         if (mActionMode != null) {
+            if (getSupportActionBar() != null) {
+                getSupportActionBar().hide();
+            }
             mActionMode.setTitle(R.string.subject_edit);
             mActionMode.setTag(subject);
         }
@@ -223,6 +227,12 @@ public class SubjectActivity extends AppCompatActivity {
         @Override
         public void onDestroyActionMode(ActionMode actionMode) {
             adapter.setSelectedSubject( null );
+
+            new Handler().postDelayed(() -> {
+                if (getSupportActionBar() != null) {
+                    getSupportActionBar().show();
+                }
+            }, 300);
         }
     };
 

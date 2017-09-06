@@ -201,6 +201,9 @@ public class CalendarSubjectEditActivity extends AppCompatActivity {
         itemView.setOnClickListener(view -> {
             mActionMode = startSupportActionMode( mActionModeCallBack );
             if (mActionMode != null) {
+                if (getSupportActionBar() != null) {
+                    getSupportActionBar().hide();
+                }
                 mActionMode.setTitle(R.string.subject_edit_menu);
             }
 
@@ -430,6 +433,13 @@ public class CalendarSubjectEditActivity extends AppCompatActivity {
                 mSelectedView.setEditSelected(false);
                 mSelectedView = null;
             }
+
+            new Handler().postDelayed(() -> {
+                if (getSupportActionBar() != null) {
+                    getSupportActionBar().show();
+                }
+            }, 300);
+
             SLog.d( TAG, "onDestroyActionMode" );
 //            adapter.setSelectedSubject( null );
         }
