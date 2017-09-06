@@ -49,7 +49,7 @@
     <string name="unavailable">Unavailable</string>
     <string name="little_available">Low availability (until 3h)</string>
     <string name="available">Available (until 5h)</string>
-    <string name="ease_of_learning_text">Selecione o(s) período(s) do dia em que você tem mais facilidade em estudar:</string>
+    <string name="ease_of_learning_text">Select the period(s) of the day you are most likely to study:</string>
     <string name="morning">Morning</string>
     <string name="afternoon">Afternoon</string>
     <string name="night">Night</string>
