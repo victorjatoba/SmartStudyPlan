@@ -229,7 +229,7 @@ public class SubjectActivity extends AppCompatActivity {
             adapter.setSelectedSubject( null );
 
             new Handler().postDelayed(() -> {
-                if (getSupportActionBar() != null) {
+                if (getSupportActionBar() != null && adapter.getSelected() == null) {
                     getSupportActionBar().show();
                 }
             }, 300);

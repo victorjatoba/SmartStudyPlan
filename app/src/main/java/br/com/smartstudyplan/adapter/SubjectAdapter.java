@@ -29,6 +29,10 @@ public class SubjectAdapter extends DynamicBaseAdapter {
         notifyDataSetChanged();
     }
 
+    public Subject getSelected() {
+        return selectedSubject;
+    }
+
     /**
      * Este método é chamado pelo ListView para buscar as views a serem exibidas na tela.
      *

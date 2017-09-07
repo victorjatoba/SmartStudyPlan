@@ -435,7 +435,7 @@ public class CalendarSubjectEditActivity extends AppCompatActivity {
             }
 
             new Handler().postDelayed(() -> {
-                if (getSupportActionBar() != null) {
+                if (getSupportActionBar() != null && mSelectedView == null) {
                     getSupportActionBar().show();
                 }
             }, 300);
