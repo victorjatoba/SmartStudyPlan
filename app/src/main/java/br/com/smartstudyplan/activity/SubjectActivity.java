@@ -228,9 +228,12 @@ public class SubjectActivity extends AppCompatActivity {
         public void onDestroyActionMode(ActionMode actionMode) {
             adapter.setSelectedSubject( null );
 
-            new Handler().postDelayed(() -> {
-                if (getSupportActionBar() != null && adapter.getSelected() == null) {
-                    getSupportActionBar().show();
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    if (getSupportActionBar() != null && adapter.getSelected() == null) {
+                        getSupportActionBar().show();
+                    }
                 }
             }, 300);
         }

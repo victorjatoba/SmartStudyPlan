@@ -36,6 +36,7 @@ import br.com.smartstudyplan.bean.CalendarSubject;
 import br.com.smartstudyplan.bean.StudyPlan;
 import br.com.smartstudyplan.bean.Subject;
 import br.com.smartstudyplan.dialog.CalendarPeriodSubjectAddDialog;
+import br.com.smartstudyplan.dialog.CalendarPeriodSubjectAddListener;
 import br.com.smartstudyplan.manager.StudyPlanManager;
 import br.com.smartstudyplan.util.SLog;
 import br.com.smartstudyplan.view.CalendarSubjectAddItemView;
@@ -198,22 +199,25 @@ public class CalendarSubjectEditActivity extends AppCompatActivity {
         CalendarSubjectEditItemView itemView
                 = CalendarSubjectEditItemView_.build(CalendarSubjectEditActivity.this);
 
-        itemView.setOnClickListener(view -> {
-            mActionMode = startSupportActionMode( mActionModeCallBack );
-            if (mActionMode != null) {
-                if (getSupportActionBar() != null) {
-                    getSupportActionBar().hide();
+        itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mActionMode = startSupportActionMode( mActionModeCallBack );
+                if (mActionMode != null) {
+                    if (getSupportActionBar() != null) {
+                        getSupportActionBar().hide();
+                    }
+                    mActionMode.setTitle(R.string.subject_edit_menu);
                 }
-                mActionMode.setTitle(R.string.subject_edit_menu);
+
+                mSelectedWeekday   = weekday;
+                mSelectedPeriod    = period;
+                mSelectedDayPeriod = layout;
+                mSelectedSubject   = subject;
+                mSelectedView      = (CalendarSubjectEditItemView)view;
+
+                mSelectedView.setEditSelected(true);
             }
-
-            mSelectedWeekday   = weekday;
-            mSelectedPeriod    = period;
-            mSelectedDayPeriod = layout;
-            mSelectedSubject   = subject;
-            mSelectedView      = (CalendarSubjectEditItemView)view;
-
-            mSelectedView.setEditSelected(true);
         });
 
         itemView.bindView(subject, mDensity, isLastItem);
@@ -234,13 +238,16 @@ public class CalendarSubjectEditActivity extends AppCompatActivity {
         CalendarSubjectAddItemView itemView
                 = CalendarSubjectAddItemView_.build(CalendarSubjectEditActivity.this);
 
-        itemView.setOnClickListener(view -> {
-            mSelectedWeekday = weekday;
-            mSelectedPeriod = period;
-            mSelectedDayPeriod = layout;
-            mSelectedSubject = null;
-            subjectAdapter.setContent(prepareAdapterContent());
-            showDialog(mSelectedSubject, R.string.subject_add);
+        itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mSelectedWeekday = weekday;
+                mSelectedPeriod = period;
+                mSelectedDayPeriod = layout;
+                mSelectedSubject = null;
+                subjectAdapter.setContent(prepareAdapterContent());
+                showDialog(mSelectedSubject, R.string.subject_add);
+            }
         });
 
         itemView.bindView(mDensity, availableTime);
@@ -303,12 +310,15 @@ public class CalendarSubjectEditActivity extends AppCompatActivity {
         final Rect scrollBounds = new Rect();
         scrollView.getHitRect(new Rect());
         if (!view.getLocalVisibleRect(scrollBounds)) {
-            new Handler().post(() -> {
-                if( view == null ){
-                    scrollView.smoothScrollTo(0, 0);
-                }
-                else{
-                    scrollView.smoothScrollTo(0, view.getBottom());
+            new Handler().post(new Runnable() {
+                @Override
+                public void run() {
+                    if( view == null ){
+                        scrollView.smoothScrollTo(0, 0);
+                    }
+                    else{
+                        scrollView.smoothScrollTo(0, view.getBottom());
+                    }
                 }
             });
         }
@@ -434,9 +444,12 @@ public class CalendarSubjectEditActivity extends AppCompatActivity {
                 mSelectedView = null;
             }
 
-            new Handler().postDelayed(() -> {
-                if (getSupportActionBar() != null && mSelectedView == null) {
-                    getSupportActionBar().show();
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    if (getSupportActionBar() != null && mSelectedView == null) {
+                        getSupportActionBar().show();
+                    }
                 }
             }, 300);
 
@@ -458,9 +471,14 @@ public class CalendarSubjectEditActivity extends AppCompatActivity {
                 subjectAdapter,
                 subject,
                 mStudyPlan.getCalendarSubjectsByWeekdayAndPeriod(mSelectedWeekday, mSelectedPeriod),
-                calendarSubjects -> updatePeriod(mStudyPlan
-                        .getCalendarSubjectsByWeekdayAndPeriod(mSelectedWeekday, mSelectedPeriod),
-                        mSelectedWeekday, mSelectedPeriod, mSelectedDayPeriod));
+                new CalendarPeriodSubjectAddListener() {
+                    @Override
+                    public void returnValues(List<CalendarSubject> calendarSubjectList) {
+                        updatePeriod(mStudyPlan
+                                        .getCalendarSubjectsByWeekdayAndPeriod(mSelectedWeekday, mSelectedPeriod),
+                                mSelectedWeekday, mSelectedPeriod, mSelectedDayPeriod);
+                    }
+                });
     }
 
     /**
