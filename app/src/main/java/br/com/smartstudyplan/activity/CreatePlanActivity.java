@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+import com.google.firebase.perf.FirebasePerformance;
+import com.google.firebase.perf.metrics.Trace;
+
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Background;
 import org.androidannotations.annotations.Bean;
@@ -209,6 +212,10 @@ public class CreatePlanActivity extends AppCompatActivity {
     @Background( serial = SERIAL_GET_VALUES )
     void createPlan(){
         long start = System.currentTimeMillis();
+
+        Trace myTrace = FirebasePerformance.getInstance().newTrace("create_plan");
+        myTrace.start();
+
         StudyPlan studyPlan = ASPGAManager.createPlanWithECJ(this);
         if( studyPlan != null ){
             studyPlanManager.setStudyPlan(studyPlan);
@@ -218,9 +225,13 @@ public class CreatePlanActivity extends AppCompatActivity {
             SLog.d(TAG, "Execution time is " + formatter.format((end - start) / 1000d) + " seconds");
 
             onFinishGenerate();
+
+            myTrace.stop();
         } else {
             showDialog();
             SLog.e(TAG, "Plano de estudo não gerado");
+
+            myTrace.stop();
         }
     }
 

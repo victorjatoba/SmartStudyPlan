@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "516885313557",
+    "firebase_url": "https://smartstudyplan.firebaseio.com",
+    "project_id": "smartstudyplan",
+    "storage_bucket": "smartstudyplan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516885313557:android:2ee3bac986afeb40",
+        "android_client_info": {
+          "package_name": "br.com.smartstudyplan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516885313557-e4iq8863lhcmba81sh3qkuqg5tnv4ahf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA-th_KjQS01qH2U94N7dYQAvKPQYQAeo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
