@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 
 import org.androidannotations.annotations.AfterViews;
@@ -53,7 +54,7 @@ public class CalendarSubjectActivity extends AppCompatActivity {
     private static final int EDIT_REQUEST_CODE = 1001;
 
     @ViewById CustomScrollView scroll;
-    @ViewById LinearLayout     layout;
+    @ViewById RelativeLayout   layout;
 
     @ViewById CustomLinearLayout sunday;
     @ViewById CustomLinearLayout monday;

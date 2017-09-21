@@ -6,4 +6,6 @@
     <string name="settings_team_text_jatoba_name" translatable="false">Victor Jatobá</string>
     <string name="settings_team_text_flavio_name" translatable="false">Flávio Kreis</string>
     <string name="settings_team_text_soares_name" translatable="false">Victor Soares</string>
+
+    <string name="admob_id">ca-app-pub-3940256099942544~3347511713</string>
 </resources>

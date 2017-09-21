@@ -47,28 +47,53 @@
         
         </RelativeLayout>
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/bottom"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:layout_alignParentBottom="true">
 
-        <View
+        <RelativeLayout
+            android:id="@+id/buttons_bottom"
             android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@color/orange_dark"/>
+            android:layout_height="75dp">
 
-        <Button
-            android:id="@+id/subject_continue_button"
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/orange_dark"/>
+
+            <Button
+                android:id="@+id/subject_continue_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_btn_orange"
+                android:textColor="@color/white"
+                android:text="@string/continue_label"/>
+
+            <ImageView
+                android:id="@+id/subject_help_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_help"
+                android:padding="10dp"/>
+
+        </RelativeLayout>
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:background="@drawable/bg_btn_orange"
-            android:textColor="@color/white"
-            android:text="@string/continue_label"/>
+            android:layout_gravity="center"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/admob_id" />
 
-    </RelativeLayout>
-
+    </LinearLayout>
 
     <ListView android:id="@+id/subject_list"
         android:layout_width="match_parent"
@@ -83,15 +108,6 @@
         android:layout_height="6dp"
         android:layout_below="@id/subject_title_layout"
         android:background="@drawable/gd_subject_title"/>
-
-    <ImageView
-        android:id="@+id/subject_help_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/ic_help"
-        android:padding="10dp"/>
 
     <LinearLayout
         android:id="@+id/empty"

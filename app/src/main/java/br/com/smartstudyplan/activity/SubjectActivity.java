@@ -14,6 +14,10 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Background;
 import org.androidannotations.annotations.Bean;
@@ -51,6 +55,7 @@ public class SubjectActivity extends AppCompatActivity {
     @ViewById ListView  subjectList;
     @ViewById View      empty;
     @ViewById Button    subjectContinueButton;
+    @ViewById AdView    adView;
 
     @Bean SubjectAdapter   adapter;
     @Bean StudyPlanManager manager;
@@ -70,6 +75,11 @@ public class SubjectActivity extends AppCompatActivity {
         subjectList.setAdapter(adapter);
 
         subjectList.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
+
+        MobileAds.initialize(this, getString(R.string.admob_id));
+
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
 
         loadSubjects();
     }
