@@ -6,6 +6,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.os.Environment;
 import android.util.DisplayMetrics;
 import android.util.Log;
 
@@ -70,9 +71,10 @@ public class ShareImageUtil {
 
         File file = null;
 
-        if( context.getExternalFilesDir( null ) != null ){
-            file = createFile(context.getExternalFilesDir(null).getAbsolutePath(),
-                    bitmapName + ".png");
+        File path = context.getExternalFilesDir(null);
+
+        if( path != null ){
+            file = createFile(path.getAbsolutePath(), bitmapName + ".png");
 
             if( file != null ){
                 FileOutputStream fos = null;

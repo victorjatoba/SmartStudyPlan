@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
 import android.graphics.Rect;
 import android.net.Uri;
 import android.os.Handler;
+import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -28,6 +29,7 @@ import java.io.File;
 import java.util.Calendar;
 import java.util.List;
 
+import br.com.smartstudyplan.BuildConfig;
 import br.com.smartstudyplan.R;
 import br.com.smartstudyplan.activity.settings.SettingsActivity_;
 import br.com.smartstudyplan.bean.Availability;
@@ -388,7 +390,9 @@ public class CalendarSubjectActivity extends AppCompatActivity {
             sendIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.share_text) );
 
             // For a file in shared storage.  For data in private storage, use a ContentProvider.
-            Uri uri = Uri.fromFile(file);
+            Uri uri = FileProvider.getUriForFile(CalendarSubjectActivity.this,
+                    "br.com.smartstudyplan", file);
+
             sendIntent.putExtra(Intent.EXTRA_STREAM, uri);
 
             progressDialog.dismiss();
