@@ -15,6 +15,10 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Background;
 import org.androidannotations.annotations.Bean;
@@ -94,6 +98,8 @@ public class CalendarSubjectActivity extends AppCompatActivity {
     @ViewById LinearLayout saturdayAfternoon;
     @ViewById LinearLayout saturdayNight;
 
+    @ViewById AdView adView;
+
     @Bean StudyPlanManager manager;
 
     private StudyPlan mStudyPlan;
@@ -120,6 +126,11 @@ public class CalendarSubjectActivity extends AppCompatActivity {
                 fridayMorning, fridayAfternoon, fridayNight,
                 saturdayMorning, saturdayAfternoon, saturdayNight
         };
+
+        MobileAds.initialize(this, getString(R.string.admob_id));
+
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
 
         getStudyPlan();
     }
