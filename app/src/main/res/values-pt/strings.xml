@@ -81,6 +81,7 @@
     <string name="menu_settings">Configurações</string>
     <string name="created_study_plan">Parabéns, o plano de estudo foi criado com sucesso!\n\nVocê poderá alterar ou gerar um novo plano a qualquer momento.</string>
     <string name="min_availability">É necessário pelo menos 1 período \'Disponível\' ou 2 \'Pouco disponível\' para os estudos.</string>
+    <string name="remove_ads">Remover propaganda</string>
 
     <!-- Help -->
     <string name="help_subject_title">Matérias - Informações</string>

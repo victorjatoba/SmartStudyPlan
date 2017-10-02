@@ -10,14 +10,16 @@ import android.os.Handler;
 import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 
-import com.google.android.gms.ads.AdRequest;
+import com.android.billingclient.api.BillingClient;
+import com.android.billingclient.api.Purchase;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Background;
@@ -25,7 +27,6 @@ import org.androidannotations.annotations.Bean;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.OnActivityResult;
 import org.androidannotations.annotations.OptionsItem;
-import org.androidannotations.annotations.OptionsMenu;
 import org.androidannotations.annotations.UiThread;
 import org.androidannotations.annotations.ViewById;
 
@@ -33,12 +34,13 @@ import java.io.File;
 import java.util.Calendar;
 import java.util.List;
 
-import br.com.smartstudyplan.BuildConfig;
 import br.com.smartstudyplan.R;
 import br.com.smartstudyplan.activity.settings.SettingsActivity_;
 import br.com.smartstudyplan.bean.Availability;
 import br.com.smartstudyplan.bean.CalendarSubject;
 import br.com.smartstudyplan.bean.StudyPlan;
+import br.com.smartstudyplan.manager.AdsManager;
+import br.com.smartstudyplan.manager.BillingManager;
 import br.com.smartstudyplan.manager.StudyPlanManager;
 import br.com.smartstudyplan.util.SLog;
 import br.com.smartstudyplan.util.ShareImageUtil;
@@ -47,14 +49,16 @@ import br.com.smartstudyplan.view.CalendarSubjectItemView_;
 import br.com.smartstudyplan.view.CustomLinearLayout;
 import br.com.smartstudyplan.view.CustomScrollView;
 
+import static br.com.smartstudyplan.manager.BillingManager.BILLING_MANAGER_NOT_INITIALIZED;
+import static br.com.smartstudyplan.manager.BillingManager.SKU_ID;
+
 /**
  * Esta tela é exibida após o plano de estudo criado, ela mostra um calendário no formato
  * semanal onde o usuário pode visualizar as matérias com as respectivas cargas horárias.
  */
 @SuppressLint("Registered")
 @EActivity( R.layout.activity_calendar_subject )
-@OptionsMenu( R.menu.menu_calendar_subject )
-public class CalendarSubjectActivity extends AppCompatActivity {
+public class CalendarSubjectActivity extends AppCompatActivity implements BillingManager.BillingUpdatesListener {
     private static final String TAG = "CalendarSubjectActivity";
 
     private static final int EDIT_REQUEST_CODE = 1001;
@@ -101,6 +105,10 @@ public class CalendarSubjectActivity extends AppCompatActivity {
     @ViewById AdView adView;
 
     @Bean StudyPlanManager manager;
+    @Bean AdsManager adsManager;
+    private BillingManager billingManager;
+    private MenuItem adsMenuItem;
+    boolean hasPurchase = false;
 
     private StudyPlan mStudyPlan;
 
@@ -127,12 +135,25 @@ public class CalendarSubjectActivity extends AppCompatActivity {
                 saturdayMorning, saturdayAfternoon, saturdayNight
         };
 
-        MobileAds.initialize(this, getString(R.string.admob_id));
-
-        AdRequest adRequest = new AdRequest.Builder().build();
-        adView.loadAd(adRequest);
+        billingManager = new BillingManager(this, this);
 
         getStudyPlan();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (billingManager != null && billingManager.isReady()) {
+            billingManager.queryPurchases();
+        }
+    }
+
+    @Override
+    public void onDestroy() {
+        if (billingManager != null) {
+            billingManager.destroy();
+        }
+        super.onDestroy();
     }
 
     /**
@@ -269,6 +290,14 @@ public class CalendarSubjectActivity extends AppCompatActivity {
         CalendarSubjectEditActivity_
                 .intent(CalendarSubjectActivity.this)
                 .startForResult(EDIT_REQUEST_CODE);
+    }
+
+    @OptionsItem(R.id.remove_ads)
+    void removeAds() {
+        if (billingManager != null && billingManager.getBillingClientResponseCode()
+                > BILLING_MANAGER_NOT_INITIALIZED) {
+            billingManager.initiatePurchaseFlow(SKU_ID, BillingClient.SkuType.INAPP);
+        }
     }
 
     /**
@@ -422,6 +451,35 @@ public class CalendarSubjectActivity extends AppCompatActivity {
     void settings(){
         SettingsActivity_.intent(CalendarSubjectActivity.this).start();
         overridePendingTransition( R.anim.screen_fade_in, R.anim.screen_fade_out );
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_calendar_subject, menu);
+        adsMenuItem = menu.findItem(R.id.remove_ads);
+        if (hasPurchase) {
+            adsMenuItem.setVisible(false);
+            adsMenuItem.setEnabled(false);
+        }
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public void onPurchasesUpdated(List<Purchase> purchases) {
+        boolean hasPurchase = false;
+        for (Purchase purchase : purchases) {
+            if (purchase.getSku().equals(SKU_ID)) {
+                hasPurchase = true;
+                break;
+            }
+        }
+
+        adsManager.updatePurchase(hasPurchase, CalendarSubjectActivity.this, adView);
+        if (hasPurchase && adsMenuItem != null) {
+            adsMenuItem.setVisible(false);
+            adsMenuItem.setEnabled(false);
+        }
     }
 
 }

@@ -14,9 +14,9 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdRequest;
+import com.android.billingclient.api.BillingClient;
+import com.android.billingclient.api.Purchase;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Background;
@@ -36,7 +36,12 @@ import br.com.smartstudyplan.bean.Step;
 import br.com.smartstudyplan.bean.Subject;
 import br.com.smartstudyplan.dialog.SubjectAddDialog;
 import br.com.smartstudyplan.dialog.SubjectAddListener;
+import br.com.smartstudyplan.manager.AdsManager;
+import br.com.smartstudyplan.manager.BillingManager;
 import br.com.smartstudyplan.manager.StudyPlanManager;
+
+import static br.com.smartstudyplan.manager.BillingManager.BILLING_MANAGER_NOT_INITIALIZED;
+import static br.com.smartstudyplan.manager.BillingManager.SKU_ID;
 
 /**
  * Esta classe contém a lista de matérias a serem estudadas. A partir dela, o usuário
@@ -45,7 +50,7 @@ import br.com.smartstudyplan.manager.StudyPlanManager;
  */
 @SuppressLint("Registered")
 @EActivity(R.layout.activity_subject)
-public class SubjectActivity extends AppCompatActivity {
+public class SubjectActivity extends AppCompatActivity implements BillingManager.BillingUpdatesListener {
 
     /**
      * Determina o máximo de matérias que podem ser adicionados.
@@ -59,6 +64,10 @@ public class SubjectActivity extends AppCompatActivity {
 
     @Bean SubjectAdapter   adapter;
     @Bean StudyPlanManager manager;
+    @Bean AdsManager       adsManager;
+    private BillingManager billingManager;
+    private MenuItem adsMenuItem;
+    boolean hasPurchase = false;
 
     private List<Subject> mSubjects;
 
@@ -76,12 +85,26 @@ public class SubjectActivity extends AppCompatActivity {
 
         subjectList.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 
-        MobileAds.initialize(this, getString(R.string.admob_id));
-
-        AdRequest adRequest = new AdRequest.Builder().build();
-        adView.loadAd(adRequest);
+        billingManager = new BillingManager(this, this);
+        adsManager.showAdsIfNecessary(this, adView);
 
         loadSubjects();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (billingManager != null && billingManager.isReady()) {
+            billingManager.queryPurchases();
+        }
+    }
+
+    @Override
+    public void onDestroy() {
+        if (billingManager != null) {
+            billingManager.destroy();
+        }
+        super.onDestroy();
     }
 
     /**
@@ -98,6 +121,11 @@ public class SubjectActivity extends AppCompatActivity {
         MenuItem item = menu.add(Menu.NONE, R.id.add_subject, 1, R.string.subject_add_menu);
         item.setIcon(R.drawable.ic_action_add);
         item.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+
+        if (!hasPurchase) {
+            adsMenuItem = menu.add(Menu.NONE, R.id.remove_ads, 2, R.string.remove_ads);
+            adsMenuItem.setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
+        }
 
         return super.onCreateOptionsMenu(menu);
     }
@@ -124,12 +152,20 @@ public class SubjectActivity extends AppCompatActivity {
     /**
      * Chama o dialog de adicionar nova matéria ao se clicar na respectiva opção do menu.
      */
-    @OptionsItem
+    @OptionsItem(R.id.add_subject)
     void addSubject(){
         if(mSubjects.size() < MAX_SUBJECTS) {
             showDialog(new Subject(0, "", 0, 0, 0), R.string.subject_add);
         } else {
             Toast.makeText(this, getString(R.string.add_max_subject_number, MAX_SUBJECTS), Toast.LENGTH_LONG).show();
+        }
+    }
+
+    @OptionsItem(R.id.remove_ads)
+    void removeAds() {
+        if (billingManager != null && billingManager.getBillingClientResponseCode()
+                > BILLING_MANAGER_NOT_INITIALIZED) {
+            billingManager.initiatePurchaseFlow(SKU_ID, BillingClient.SkuType.INAPP);
         }
     }
 
@@ -267,5 +303,21 @@ public class SubjectActivity extends AppCompatActivity {
             }
         }
         return false;
+    }
+
+    @Override
+    public void onPurchasesUpdated(List<Purchase> purchases) {
+        for (Purchase purchase : purchases) {
+            if (purchase.getSku().equals(SKU_ID)) {
+                hasPurchase = true;
+                break;
+            }
+        }
+
+        adsManager.updatePurchase(hasPurchase, SubjectActivity.this, adView);
+        if (hasPurchase && adsMenuItem != null) {
+            adsMenuItem.setVisible(false);
+            adsMenuItem.setEnabled(false);
+        }
     }
 }

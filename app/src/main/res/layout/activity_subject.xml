@@ -91,7 +91,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             ads:adSize="SMART_BANNER"
-            ads:adUnitId="@string/admob_id" />
+            ads:adUnitId="@string/admob_id"
+            android:visibility="gone"/>
 
     </LinearLayout>
 

@@ -55,4 +55,12 @@ public interface UserPreferences {
     @DefaultBoolean(false)
     boolean easeOfLearningNight();
 
+    /**
+     * Verifica se o usuário pagou ou não para remover a propaganda.
+     *
+     * @return -1 caso pagamento não verificado, 0 caso não tenha pago e 1 caso tenha pago.
+     */
+    @DefaultInt(-1)
+    int payUserStatus();
+
 }

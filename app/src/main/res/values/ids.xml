@@ -5,4 +5,5 @@
     <item name="available_id" type="id"/>
 
     <item name="add_subject" type="id"/>
+    <item name="remove_ads" type="id"/>
 </resources>

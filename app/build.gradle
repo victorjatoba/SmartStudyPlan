@@ -50,15 +50,17 @@ def AAVersion = '4.3.1'
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     annotationProcessor "org.androidannotations:androidannotations:$AAVersion"
-    compile "org.androidannotations:androidannotations-api:$AAVersion"
+    implementation "org.androidannotations:androidannotations-api:$AAVersion"
     compile project(':aspga')
-    compile 'com.android.support:appcompat-v7:26.0.2'
-    compile 'com.github.bluejamesbond:textjustify-android:2.1.0'
+    implementation 'com.android.support:appcompat-v7:26.0.2'
+    implementation 'com.github.bluejamesbond:textjustify-android:2.1.0'
 
-    compile 'com.google.firebase:firebase-core:11.4.0'
-    compile 'com.google.firebase:firebase-perf:11.4.0'
-    compile 'com.google.firebase:firebase-ads:11.4.0'
-    compile 'com.google.firebase:firebase-crash:11.4.0'
+    implementation 'com.google.firebase:firebase-core:11.4.0'
+    implementation 'com.google.firebase:firebase-perf:11.4.0'
+    implementation 'com.google.firebase:firebase-ads:11.4.0'
+    implementation 'com.google.firebase:firebase-crash:11.4.0'
+
+    implementation 'com.android.billingclient:billing:1.0'
 }
 
 apply plugin: 'com.google.gms.google-services'

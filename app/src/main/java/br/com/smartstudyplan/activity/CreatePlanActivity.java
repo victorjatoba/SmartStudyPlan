@@ -32,6 +32,7 @@ import br.com.smartstudyplan.R;
 import br.com.smartstudyplan.bean.Step;
 import br.com.smartstudyplan.bean.StudyPlan;
 import br.com.smartstudyplan.manager.ASPGAManager;
+import br.com.smartstudyplan.manager.AdsManager;
 import br.com.smartstudyplan.manager.StudyPlanManager;
 import br.com.smartstudyplan.notification.BootReceiver;
 import br.com.smartstudyplan.util.SLog;
@@ -67,6 +68,7 @@ public class CreatePlanActivity extends AppCompatActivity {
     private int mActualPosition = SUBJECT_TEXT_POSITION;
 
     @Bean StudyPlanManager studyPlanManager;
+    @Bean AdsManager adsManager;
 
     private AspgaContext mAspgaContext;
 
@@ -95,10 +97,7 @@ public class CreatePlanActivity extends AppCompatActivity {
         layoutContainer.removeAllViews();
         mActualPosition = SUBJECT_TEXT_POSITION;
 
-        MobileAds.initialize(this, getString(R.string.admob_id));
-
-        AdRequest adRequest = new AdRequest.Builder().build();
-        adView.loadAd(adRequest);
+        adsManager.showAdsIfNecessary(this, adView);
 
         showNextMessage( mActualPosition );
 

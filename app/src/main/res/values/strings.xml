@@ -81,6 +81,7 @@
     <string name="menu_settings">Settings</string>
     <string name="created_study_plan">Congratulation, the study plan was created successfully!\n\nYou can edit or generate another plan when you want.</string>
     <string name="min_availability">Inform your availability</string>
+    <string name="remove_ads">Remove Ads</string>
 
     <!-- Help -->
     <string name="help_subject_title">Courses - Information</string>

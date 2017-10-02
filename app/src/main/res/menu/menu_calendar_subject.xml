@@ -15,6 +15,11 @@
         android:orderInCategory="100" />
 
     <item
+        android:id="@+id/remove_ads"
+        android:title="@string/remove_ads"
+        app:showAsAction="never"/>
+
+    <item
         android:id="@+id/create_new_plan"
         android:title="@string/menu_create_new_plan"
         android:orderInCategory="101" />

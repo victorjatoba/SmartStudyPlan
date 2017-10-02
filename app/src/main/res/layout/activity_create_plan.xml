@@ -19,7 +19,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         ads:adSize="SMART_BANNER"
-        ads:adUnitId="@string/admob_id"/>
+        ads:adUnitId="@string/admob_id"
+        android:visibility="gone"/>
 
     <LinearLayout
         android:id="@+id/layout_container"
