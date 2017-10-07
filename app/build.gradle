@@ -22,8 +22,8 @@ android {
         applicationId "br.com.smartstudyplan"
         minSdkVersion 21
         targetSdkVersion 26
-        versionCode 5
-        versionName '1.0.4'
+        versionCode 8
+        versionName '2.1.2'
     }
     buildTypes {
         release {
@@ -48,18 +48,16 @@ android {
 def AAVersion = '4.3.1'
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     annotationProcessor "org.androidannotations:androidannotations:$AAVersion"
     implementation "org.androidannotations:androidannotations-api:$AAVersion"
     compile project(':aspga')
     implementation 'com.android.support:appcompat-v7:26.0.2'
     implementation 'com.github.bluejamesbond:textjustify-android:2.1.0'
-
     implementation 'com.google.firebase:firebase-core:11.4.0'
     implementation 'com.google.firebase:firebase-perf:11.4.0'
     implementation 'com.google.firebase:firebase-ads:11.4.0'
     implementation 'com.google.firebase:firebase-crash:11.4.0'
-
     implementation 'com.android.billingclient:billing:1.0'
 }
 
