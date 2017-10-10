@@ -467,7 +467,6 @@ public class CalendarSubjectActivity extends AppCompatActivity implements Billin
 
     @Override
     public void onPurchasesUpdated(List<Purchase> purchases) {
-        boolean hasPurchase = false;
         for (Purchase purchase : purchases) {
             if (purchase.getSku().equals(SKU_ID)) {
                 hasPurchase = true;
