@@ -17,10 +17,10 @@ apply plugin: 'com.google.firebase.firebase-crash'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion '26.0.1'
+    buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "br.com.smartstudyplan"
-        minSdkVersion 21
+        minSdkVersion 22
         targetSdkVersion 26
         versionCode 8
         versionName '2.1.2'
@@ -48,10 +48,10 @@ android {
 def AAVersion = '4.3.1'
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    api fileTree(include: ['*.jar'], dir: 'libs')
     annotationProcessor "org.androidannotations:androidannotations:$AAVersion"
     implementation "org.androidannotations:androidannotations-api:$AAVersion"
-    compile project(':aspga')
+    api project(':aspga')
     implementation 'com.android.support:appcompat-v7:26.0.2'
     implementation 'com.github.bluejamesbond:textjustify-android:2.1.0'
     implementation 'com.google.firebase:firebase-core:11.4.0'
