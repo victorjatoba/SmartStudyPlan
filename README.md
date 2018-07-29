@@ -15,10 +15,10 @@ Send a e-mail to: contact(at)smartstudyplan.com
 
 <dl>
   <dt>Victor Jatobá</dt>
-  <dd>victor.jatoba(at)intelectin.com.br</dd>
+  <dd>victorjatoba10(at)gmail[dot]com</dd>
   
   <dt>Paulo Barbosa</dt>
-  <dd>paulo.barbosa(at)intelectin.com.br</dd>
+  <dd>paulo.barbosa(at)intelectin[dot]com[dot]br</dd>
 </dl>
 
 # Contributors
