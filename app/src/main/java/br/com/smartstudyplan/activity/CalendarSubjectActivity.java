@@ -7,15 +7,16 @@ import android.graphics.Bitmap;
 import android.graphics.Rect;
 import android.net.Uri;
 import android.os.Handler;
-import android.support.v4.content.FileProvider;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.FileProvider;
 
 import com.android.billingclient.api.BillingClient;
 import com.android.billingclient.api.Purchase;
@@ -64,7 +65,8 @@ public class CalendarSubjectActivity extends AppCompatActivity implements Billin
     private static final int EDIT_REQUEST_CODE = 1001;
 
     @ViewById CustomScrollView scroll;
-    @ViewById RelativeLayout   layout;
+    @ViewById
+    RelativeLayout layout;
 
     @ViewById CustomLinearLayout sunday;
     @ViewById CustomLinearLayout monday;
@@ -74,7 +76,8 @@ public class CalendarSubjectActivity extends AppCompatActivity implements Billin
     @ViewById CustomLinearLayout friday;
     @ViewById CustomLinearLayout saturday;
 
-    @ViewById LinearLayout sundayMorning;
+    @ViewById
+    LinearLayout sundayMorning;
     @ViewById LinearLayout sundayAfternoon;
     @ViewById LinearLayout sundayNight;
 
@@ -468,7 +471,7 @@ public class CalendarSubjectActivity extends AppCompatActivity implements Billin
     @Override
     public void onPurchasesUpdated(List<Purchase> purchases) {
         for (Purchase purchase : purchases) {
-            if (purchase.getSku().equals(SKU_ID)) {
+            if (purchase.getSkus().equals(SKU_ID)) {
                 hasPurchase = true;
                 break;
             }

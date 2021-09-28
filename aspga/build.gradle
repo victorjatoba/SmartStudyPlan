@@ -13,8 +13,9 @@ repositories {
 }
 
 apply plugin: 'java'
+apply plugin: 'java-library'
 
 dependencies {
-    compile 'edu.gmu.cs:ecj:22'
-//    compile fileTree(dir: 'libs', include: ['*.jar'])
+    api 'edu.gmu.cs:ecj:22'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
 }

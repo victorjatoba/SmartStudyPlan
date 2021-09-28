@@ -2,9 +2,9 @@ package br.com.smartstudyplan.activity;
 
 import android.annotation.SuppressLint;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.view.ActionMode;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.view.ActionMode;
+import androidx.appcompat.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -308,7 +308,7 @@ public class SubjectActivity extends AppCompatActivity implements BillingManager
     @Override
     public void onPurchasesUpdated(List<Purchase> purchases) {
         for (Purchase purchase : purchases) {
-            if (purchase.getSku().equals(SKU_ID)) {
+            if (purchase.getSkus().equals(SKU_ID)) {
                 hasPurchase = true;
                 break;
             }

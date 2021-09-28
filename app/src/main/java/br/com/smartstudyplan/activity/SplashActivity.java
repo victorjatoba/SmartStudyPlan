@@ -3,7 +3,7 @@ package br.com.smartstudyplan.activity;
 import android.annotation.SuppressLint;
 import android.os.Handler;
 import android.preference.PreferenceManager;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.widget.ImageView;
 
 import org.androidannotations.annotations.AfterInject;

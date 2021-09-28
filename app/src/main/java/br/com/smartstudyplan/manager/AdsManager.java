@@ -29,7 +29,8 @@ public class AdsManager {
     public int showAdsIfNecessary(Context context, AdView adView) {
         int payStatus = preferences.payUserStatus().get();
         if (payStatus == 0) {
-            MobileAds.initialize(context, context.getString(R.string.admob_id));
+            //MobileAds.initialize(context, context.getString(R.string.admob_id));
+            MobileAds.initialize(context, initializationStatus -> { });
 
             AdRequest adRequest = new AdRequest.Builder().build();
             adView.setVisibility(View.VISIBLE);

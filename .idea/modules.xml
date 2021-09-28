@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SmartStudyPlan.iml" filepath="$PROJECT_DIR$/SmartStudyPlan.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/aspga/aspga.iml" filepath="$PROJECT_DIR$/aspga/aspga.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SmartStudyPlan.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SmartStudyPlan.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aspga/SmartStudyPlan.aspga.iml" filepath="$PROJECT_DIR$/.idea/modules/aspga/SmartStudyPlan.aspga.iml" />
     </modules>
   </component>
 </project>
