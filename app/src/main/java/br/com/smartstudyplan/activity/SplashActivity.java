@@ -65,6 +65,9 @@ public class SplashActivity extends AppCompatActivity {
      * Direciona para a tela correta.
      */
     void redirectToCorrectlyActivity(){
+
+        System.out.println("preferences: " + preferences.step().get());
+
         switch (preferences.step().get()){
             case Step.STEP_INIT:
                 PreferenceManager

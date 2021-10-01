@@ -7,6 +7,9 @@ import android.graphics.Bitmap;
 import android.graphics.Rect;
 import android.net.Uri;
 import android.os.Handler;
+import android.os.Looper;
+import android.provider.Settings;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -20,7 +23,10 @@ import androidx.core.content.FileProvider;
 
 import com.android.billingclient.api.BillingClient;
 import com.android.billingclient.api.Purchase;
+import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.RequestConfiguration;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Background;
@@ -32,6 +38,7 @@ import org.androidannotations.annotations.UiThread;
 import org.androidannotations.annotations.ViewById;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
@@ -141,6 +148,9 @@ public class CalendarSubjectActivity extends AppCompatActivity implements Billin
         billingManager = new BillingManager(this, this);
 
         getStudyPlan();
+
+        carregarAds();
+
     }
 
     @Override
@@ -297,8 +307,11 @@ public class CalendarSubjectActivity extends AppCompatActivity implements Billin
 
     @OptionsItem(R.id.remove_ads)
     void removeAds() {
-        if (billingManager != null && billingManager.getBillingClientResponseCode()
-                > BILLING_MANAGER_NOT_INITIALIZED) {
+
+        System.out.println("removeAds: " + billingManager.getBillingClientResponseCode());
+
+        if (billingManager != null
+                && billingManager.getBillingClientResponseCode() > BILLING_MANAGER_NOT_INITIALIZED) {
             billingManager.initiatePurchaseFlow(SKU_ID, BillingClient.SkuType.INAPP);
         }
     }
@@ -477,11 +490,25 @@ public class CalendarSubjectActivity extends AppCompatActivity implements Billin
             }
         }
 
-        adsManager.updatePurchase(hasPurchase, CalendarSubjectActivity.this, adView);
+        Log.d("CalendarupdatePurchase", hasPurchase + " boolean");
+
         if (hasPurchase && adsMenuItem != null) {
             adsMenuItem.setVisible(false);
             adsMenuItem.setEnabled(false);
         }
+
+    }
+
+    private void carregarAds(){
+
+        Handler handler=new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                adsManager.updatePurchase(hasPurchase, CalendarSubjectActivity.this, adView);
+            }
+        },1000);
+
     }
 
 }
